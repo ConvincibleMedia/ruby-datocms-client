@@ -10,7 +10,8 @@ module Dato
 
     desc "dump", "dumps DatoCMS content into local files"
     option :config, default: "dato.config.rb"
-    option :token, default: ENV["DATO_API_TOKEN"], required: true
+    option :token, required: false
+    option :token_var, default: "DATO_API_TOKEN", required: false
     option :environment, type: :string, required: false
     option :preview, default: false, type: :boolean
     option :watch, default: false, type: :boolean
@@ -19,9 +20,19 @@ module Dato
       config_file = File.expand_path(options[:config])
       watch_mode = options[:watch]
       preview_mode = options[:preview]
+      token = options[:token]
+
+      # Get token
+      if !token || token.empty?
+        token = ENV[options[:token_var]]
+        unless token
+          puts "Missing token"
+          exit 1
+        end
+      end
 
       client = Dato::Site::Client.new(
-        options[:token],
+        token,
         environment: options[:environment],
         extra_headers: {
           "X-Reason" => "dump",
