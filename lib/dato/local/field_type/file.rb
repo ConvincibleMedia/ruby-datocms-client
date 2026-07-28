@@ -137,6 +137,10 @@ module Dato
           @upload.blurhash
         end
 
+        def thumbhash
+          @upload.thumbhash if @upload.respond_to?(:thumbhash)
+        end
+
         class VideoAttributes
           def initialize(upload)
             @upload = upload
@@ -273,6 +277,7 @@ module Dato
             mime_type: mime_type,
             colors: colors.map(&:to_hash),
             blurhash: blurhash,
+            thumbhash: thumbhash,
             video: video && video.to_hash,
           }
         end
