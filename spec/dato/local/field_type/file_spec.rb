@@ -68,9 +68,18 @@ module Dato
               size: 4000,
               width: 20,
               height: 20,
+              copyright: "DatoCMS",
               tags: ["ciao"],
+              smart_tags: ["logo"],
+              filename: "foo.png",
+              basename: "foo",
+              is_image: true,
+              exif_info: {},
+              mime_type: "image/png",
               colors: [{ red: 255, green: 255, blue: 255, alpha: 255 }],
-              video: nil,
+              blurhash: "LEHV6nWB2yk8pyo0adR*.7kCMdnj",
+              thumbhash: "UhqCDQIkrHOfVG8wBa2v39z7CXeqZWFLdg==",
+              mux_playback_id: nil,
               default_field_metadata: {
                 en: {
                   alt: nil,
@@ -93,6 +102,8 @@ module Dato
               title: "a title",
               custom_data: a_hash_including(hello: "world"),
               tags: ["ciao"],
+              blurhash: "LEHV6nWB2yk8pyo0adR*.7kCMdnj",
+              thumbhash: "UhqCDQIkrHOfVG8wBa2v39z7CXeqZWFLdg==",
               colors: include(
                 an_object_having_attributes(
                   alpha: 1.0,
@@ -103,6 +114,22 @@ module Dato
                 ),
               ),
             )
+          end
+
+          it "includes thumbhash in its hash representation" do
+            expect(file.to_hash).to include(
+              blurhash: "LEHV6nWB2yk8pyo0adR*.7kCMdnj",
+              thumbhash: "UhqCDQIkrHOfVG8wBa2v39z7CXeqZWFLdg==",
+            )
+          end
+
+          context "when the upload payload does not include thumbhash" do
+            let(:upload_attributes) { super().except(:thumbhash) }
+
+            it "returns and serializes nil" do
+              expect(file.thumbhash).to be_nil
+              expect(file.to_hash).to include(thumbhash: nil)
+            end
           end
 
           it "responds to url method" do
