@@ -1,13 +1,34 @@
-/.bundle/
-/.yardoc
-/Gemfile.lock
-/_yardoc/
-/coverage/
-/doc/
-/pkg/
-/spec/reports/
-/coverage/
-/tmp/
-build.zip
+# Essential
+.git
 .env
+
+# Windows
+*.lnk
+*.db
+*.ini
+
+# Working files/dirs
+.bundle
+.yardoc
+_yardoc
+coverage
+doc
+pkg
+spec/reports
+node_modules
+.rspec_status
+build.zip
+
+# Local config
+.vscode
+.codex
+.agents
+agents.md
+
+# Temp/cache/logs
+*/tmp
+*/cache
+
+# Don't commit
 dato.config.rb
+Gemfile.lock

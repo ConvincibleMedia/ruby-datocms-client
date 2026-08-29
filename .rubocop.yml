@@ -53,7 +53,6 @@ Layout/LineLength:
   - "spec/**/*"
   - "lib/dato/site/repo/*"
   - "lib/dato/account/repo/*"
-  - "lib/dato/account/repo/*"
   - "dato.gemspec"
 
 Metrics/ParameterLists:
