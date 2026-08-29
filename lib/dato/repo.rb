@@ -70,7 +70,7 @@ module Dato
       if link.schema && %i[post put].include?(link.method) && options.fetch(:serialize_response, true)
         body = JsonApiSerializer.new(link: link).serialize(
           body,
-          link.method == :post ? nil : placeholders.last,
+          link.rel == "update" ? placeholders.last : nil,
         )
       end
 

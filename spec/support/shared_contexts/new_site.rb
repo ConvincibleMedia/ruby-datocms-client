@@ -25,14 +25,17 @@ RSpec.shared_context "with a new site" do
   end
 
   let(:site) do
-    account_client.sites.create(
+    created_site = account_client.sites.create(
       name: "Integration new test site",
     )
+
+    @persistent_test_site_id = created_site[:id] if persistent_test_account?
+    created_site
   end
 
   let(:client) do
     Dato::Site::Client.new(
-      site[:readwrite_token],
+      site_api_token(site),
       base_url: ENV.fetch("SITE_API_BASE_URL"),
     )
   end
@@ -182,7 +185,29 @@ RSpec.shared_context "with a new site" do
     )
   end
 
-  let(:image_id) { client.upload_image("https://www.datocms-assets.com/205/1549027974-logo.png")[:upload_id] }
+  let(:image_id) do
+    client.upload_image(
+      "https://www.datocms-assets.com/205/1549027974-logo.png",
+      default_field_metadata: {
+        alt: {
+          en: "My first post",
+          it: "Il mio primo post",
+        },
+        title: {
+          en: "First post",
+          it: "Primo post",
+        },
+        custom_data: {
+          en: {},
+          it: {},
+        },
+        focal_point: {
+          x: 0.1,
+          y: 0.1,
+        },
+      },
+    )[:upload_id]
+  end
   let(:file_id) { client.upload_file("./spec/fixtures/file.txt")[:upload_id] }
 
   let(:author) do
@@ -202,13 +227,6 @@ RSpec.shared_context "with a new site" do
       slug_field[:api_key] => "first-post",
       image_field[:api_key] => {
         upload_id: image_id,
-        alt: "My first post",
-        title: "First post",
-        custom_data: {},
-        focal_point: {
-          x: 0.1,
-          y: 0.1,
-        },
       },
       structured_text_field[:api_key] => {
         schema: "dast",
@@ -240,40 +258,32 @@ RSpec.shared_context "with a new site" do
 
   before do
     site
+    client.site.activate_non_localized_focal_points if persistent_test_account?
+
+    site_attributes = client.site.find
+    site_attributes.delete(:theme)
 
     client.site.update(
-      client.site.find.merge(
+      site_attributes.merge(
         locales: %w[en it],
-        theme: {
-          logo: client.upload_image("./spec/fixtures/dato-logo.jpg")[:upload_id],
-          primary_color: {
-            red: 63,
-            green: 63,
-            blue: 63,
-            alpha: 63,
-          },
-          dark_color: {
-            red: 0,
-            green: 0,
-            blue: 0,
-            alpha: 0,
-          },
-          light_color: {
-            red: 127,
-            green: 127,
-            blue: 127,
-            alpha: 127,
-          },
-          accent_color: {
-            red: 255,
-            green: 255,
-            blue: 255,
-            alpha: 255,
-          },
-        },
       ),
     )
 
-    client.items.publish(item[:id])
+    client.items.publish(
+      item[:id],
+      content_in_locales: %w[en it],
+      non_localized_content: true,
+    )
+  end
+
+  after do
+    if @persistent_test_site_id
+      begin
+        account_client.sites.destroy(@persistent_test_site_id)
+      rescue StandardError
+        warn "Failed to clean up DatoCMS test project #{@persistent_test_site_id}"
+        raise
+      end
+    end
   end
 end

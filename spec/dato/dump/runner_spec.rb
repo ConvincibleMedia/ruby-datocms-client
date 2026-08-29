@@ -5,7 +5,7 @@ require "front_matter_parser"
 
 module Dato
   module Dump
-    RSpec.describe Runner, :vcr do
+    RSpec.describe Runner, :vcr, :persistent_account do
       include_context "with a new site"
 
       subject(:runner) do

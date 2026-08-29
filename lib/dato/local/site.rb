@@ -11,7 +11,7 @@ module Dato
       attr_reader :entity
 
       def_delegators :entity, :id, :name, :locales, :domain,
-                     :internal_domain, :no_index, :frontend_url
+                     :internal_domain, :no_index
 
       def initialize(entity, items_repo)
         @entity = entity
@@ -28,6 +28,10 @@ module Dato
 
       def favicon
         read_attribute(:favicon, FieldType::UploadId, false)
+      end
+
+      def frontend_url
+        entity[:frontend_url]
       end
 
       def to_s

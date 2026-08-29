@@ -4,7 +4,7 @@ require "spec_helper"
 
 module Dato
   module Local
-    RSpec.describe ItemsRepo, :vcr do
+    RSpec.describe ItemsRepo, :vcr, :persistent_account do
       include_context "with a new site"
 
       subject(:repo) do
@@ -51,11 +51,17 @@ module Dato
           I18n.with_locale(:it) do
             expect(repo.articles.last.title).to eq "Primo post"
             expect(repo.articles.last.to_hash[:title]).to eq "Primo post"
+            expect(repo.articles.last.image.alt).to eq "Il mio primo post"
+            expect(repo.articles.last.image.title).to eq "Primo post"
+            expect(repo.articles.last.image.focal_point).to eq("x" => 0.1, "y" => 0.1)
           end
 
           I18n.with_locale(:en) do
             expect(repo.articles.last.title).to eq "First post"
             expect(repo.articles.last.to_hash[:title]).to eq "First post"
+            expect(repo.articles.last.image.alt).to eq "My first post"
+            expect(repo.articles.last.image.title).to eq "First post"
+            expect(repo.articles.last.image.focal_point).to eq("x" => 0.1, "y" => 0.1)
           end
         end
       end

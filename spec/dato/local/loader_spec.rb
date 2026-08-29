@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-describe Dato::Local::Loader, :vcr do
+describe Dato::Local::Loader, :vcr, :persistent_account do
   include_context "with a new site"
 
   subject(:loader) do
