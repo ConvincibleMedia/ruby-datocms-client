@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require "imgix"
+require "active_support/core_ext/hash/indifferent_access"
+require "dato/utils/locale_value"
 
 module Dato
   module Local
@@ -17,7 +19,7 @@ module Dato
                 upload,
                 v[:alt],
                 v[:title],
-                v[:custom_data],
+                v[:custom_data] || {},
                 v[:focal_point],
                 repo.site.entity.imgix_host,
               )
@@ -86,27 +88,19 @@ module Dato
         end
 
         def alt
-          default_metadata = @upload.default_field_metadata.deep_stringify_keys
-                                    .fetch(I18n.locale.to_s, {})
-          @alt || default_metadata["alt"]
+          @alt || localized_default_metadata(:alt)
         end
 
         def title
-          default_metadata = @upload.default_field_metadata.deep_stringify_keys
-                                    .fetch(I18n.locale.to_s, {})
-          @title || default_metadata["title"]
+          @title || localized_default_metadata(:title)
         end
 
         def custom_data
-          default_metadata = @upload.default_field_metadata.deep_stringify_keys
-                                    .fetch(I18n.locale.to_s, {})
-          @custom_data.merge(default_metadata.fetch("custom_data", {}))
+          @custom_data.merge(localized_default_metadata(:custom_data) || {})
         end
 
         def focal_point
-          default_metadata = @upload.default_field_metadata.deep_stringify_keys
-                                    .fetch(I18n.locale.to_s, {})
-          @focal_point || default_metadata["focal_point"]
+          @focal_point || default_field_metadata[:focal_point]
         end
 
         def tags
@@ -280,6 +274,16 @@ module Dato
             thumbhash: thumbhash,
             video: video && video.to_hash,
           }
+        end
+
+        private
+
+        def default_field_metadata
+          (@upload.default_field_metadata || {}).with_indifferent_access
+        end
+
+        def localized_default_metadata(field)
+          Utils::LocaleValue.find(default_field_metadata[field] || {})
         end
       end
     end

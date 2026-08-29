@@ -55,7 +55,7 @@ module Dato
               upload_id: upload_entity.id,
               alt: "an alt",
               title: nil,
-              custom_data: { hello: "world" },
+              custom_data: { source: "record" },
               focal_point: { x: 0.3, y: 0.4 },
             }
           end
@@ -81,12 +81,13 @@ module Dato
               thumbhash: "UhqCDQIkrHOfVG8wBa2v39z7CXeqZWFLdg==",
               mux_playback_id: nil,
               default_field_metadata: {
-                en: {
-                  alt: nil,
-                  title: "a title",
-                  custom_data: {},
-                  focal_point: { x: 0.3, y: 0.4 },
+                alt: { en: "default alt", it: "alt italiano" },
+                title: { en: "a title", it: "titolo italiano" },
+                custom_data: {
+                  en: { hello: "world" },
+                  it: { hello: "mondo" },
                 },
+                focal_point: { x: 0.1, y: 0.2 },
               },
             }
           end
@@ -100,7 +101,10 @@ module Dato
               height: 20,
               alt: "an alt",
               title: "a title",
-              custom_data: a_hash_including(hello: "world"),
+              custom_data: a_hash_including(
+                hello: "world",
+                source: "record",
+              ),
               tags: ["ciao"],
               blurhash: "LEHV6nWB2yk8pyo0adR*.7kCMdnj",
               thumbhash: "UhqCDQIkrHOfVG8wBa2v39z7CXeqZWFLdg==",
@@ -137,8 +141,24 @@ module Dato
           end
 
           it "returns focal point" do
+            expect(file.focal_point).to eq({ "x" => 0.3, "y" => 0.4 })
             expect(file.url(w: 300, h: 300, fit: "crop")).to eq "https://foobar.com/foo.png?w=300&h=300&fit=crop&crop=focalpoint&fp-x=0.3&fp-y=0.4"
-            expect(file.url(w: 300, h: 300, fit: "crop")).to eq "https://foobar.com/foo.png?w=300&h=300&fit=crop&crop=focalpoint&fp-x=0.3&fp-y=0.4"
+          end
+
+          context "with a different locale" do
+            around do |example|
+              I18n.with_locale(:it) { example.run }
+            end
+
+            it "selects localized asset data from the current locale" do
+              expect(file.alt).to eq("an alt")
+              expect(file.title).to eq("titolo italiano")
+              expect(file.custom_data).to include(
+                "hello" => "mondo",
+                "source" => "record",
+              )
+              expect(file.focal_point).to eq({ "x" => 0.3, "y" => 0.4 })
+            end
           end
 
           describe "#lqip_data_url" do
@@ -162,7 +182,7 @@ module Dato
               context "status = 200" do
                 before do
                   stub_request(:get, "https://www.datocms-assets.com/foo.png?lqip=blurhash&w=300")
-                    .to_return(body: ::File.new("./spec/fixtures/blurhash.jpg"))
+                    .to_return(body: ::File.binread("./spec/fixtures/blurhash.jpg"))
                 end
 
                 it "returns base64-encoded url" do
@@ -207,12 +227,19 @@ module Dato
               notes: "notes",
               copyright: "copyright",
               default_field_metadata: {
-                en: {
-                  alt: "Default alt",
-                  title: "Default title",
-                  custom_data: { hello: "world" },
-                  focal_point: { x: 0.1, y: 0.2 },
+                alt: {
+                  en: "Default alt",
+                  it: "Alt predefinito",
                 },
+                title: {
+                  en: "Default title",
+                  it: "Titolo predefinito",
+                },
+                custom_data: {
+                  en: { hello: "world" },
+                  it: { hello: "mondo" },
+                },
+                focal_point: { x: 0.1, y: 0.2 },
               },
             }
           end
@@ -225,6 +252,19 @@ module Dato
             expect(file.title).to eq "Default title"
             expect(file.custom_data).to eq({ "hello" => "world" })
             expect(file.focal_point).to eq({ "x" => 0.1, "y" => 0.2 })
+          end
+
+          context "with a different locale" do
+            around do |example|
+              I18n.with_locale(:it) { example.run }
+            end
+
+            it "selects each localized default from its locale map" do
+              expect(file.alt).to eq("Alt predefinito")
+              expect(file.title).to eq("Titolo predefinito")
+              expect(file.custom_data).to eq({ "hello" => "mondo" })
+              expect(file.focal_point).to eq({ "x" => 0.1, "y" => 0.2 })
+            end
           end
         end
 
@@ -250,11 +290,9 @@ module Dato
                 width: 20,
                 height: 20,
                 default_field_metadata: {
-                  it: {
-                    alt: "alt italiano",
-                    title: "title italiano",
-                    custom_data: {},
-                  },
+                  alt: { it: "alt italiano" },
+                  title: { it: "title italiano" },
+                  custom_data: { it: {} },
                 },
               }
             end
