@@ -32,9 +32,7 @@ module Dato
             "\n\n# datocms:start\n#{content_to_add}\n# datocms:end",
           )
 
-          File.open(complete_path, "w") do |f|
-            f.write new_content
-          end
+          File.write(complete_path, new_content)
         end
       end
     end

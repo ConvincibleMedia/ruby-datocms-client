@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "2.7.5"
+          bundler-cache: true
+
+      - name: Audit dependencies
+        run: bundle exec bundler-audit check --update
+
+      - name: Check Ruby style
+        run: bundle exec rubocop --format simple
+
+      - name: Run tests
+        run: bundle exec rake spec
+
+      - name: Build gem
+        run: bundle exec rake build
+
+      - name: Smoke-test installed gem
+        run: bash bin/smoke_package pkg/dato-*.gem

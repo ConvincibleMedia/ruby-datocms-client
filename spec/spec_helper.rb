@@ -52,9 +52,7 @@ VCR.configure do |config|
 
   config.before_record do |interaction|
     authorization = interaction.request.headers["Authorization"]
-    if authorization
-      interaction.request.headers["Authorization"] = ["Bearer <DATOCMS_TOKEN>"]
-    end
+    interaction.request.headers["Authorization"] = ["Bearer <DATOCMS_TOKEN>"] if authorization
 
     uri = URI(interaction.request.uri)
 
@@ -118,9 +116,7 @@ VCR.configure do |config|
                 AccountClientProvider::SITE_TOKEN_PLACEHOLDER
             end
 
-            if attributes["readonly_token"]
-              attributes["readonly_token"] = "<DATOCMS_READONLY_TOKEN>"
-            end
+            attributes["readonly_token"] = "<DATOCMS_READONLY_TOKEN>" if attributes["readonly_token"]
           end
 
           owner = value["owner"]

@@ -19,7 +19,7 @@ module Dato
         end
 
         def perform
-          FileUtils.remove_dir(path) if Dir.exist?(path)
+          FileUtils.rm_rf(path)
 
           FileUtils.mkdir_p(path)
 

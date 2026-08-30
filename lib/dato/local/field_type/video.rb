@@ -40,7 +40,7 @@ module Dato
         end
 
         def iframe_embed(width = self.width, height = self.height)
-          # rubocop:disable Layout/LineLength
+          # rubocop:disable-next Layout/LineLength
           case provider
           when "youtube"
             %(<iframe width="#{width}" height="#{height}" src="//www.youtube.com/embed/#{provider_uid}?rel=0" frameborder="0" allowfullscreen></iframe>)
@@ -49,7 +49,6 @@ module Dato
           when "facebook"
             %(<iframe src="//www.facebook.com/plugins/video.php?href=#{url}&width=#{width}&show_text=false&height=#{height}" width="#{width}" height="#{height}" style="border:none;overflow:hidden;width:100%;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>)
           end
-          # rubocop:enable Layout/LineLength
         end
 
         def to_hash(*_args)

@@ -21,9 +21,8 @@ module Dato
           @dato = dato
           @operations = operations
 
-          # rubocop:disable Security/Eval
+          # rubocop:disable-next Security/Eval
           eval(config_code)
-          # rubocop:enable Security/Eval
         end
 
         def directory(path, &block)

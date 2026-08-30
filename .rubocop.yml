@@ -1,6 +1,6 @@
 
 AllCops:
-  TargetRubyVersion: 2.5
+  TargetRubyVersion: 2.7
   NewCops: enable
 
   Exclude:
@@ -15,7 +15,27 @@ Style/Documentation:
 Style/GuardClause:
   Enabled: false
 
-Naming/PredicateName:
+Layout/IndentationStyle:
+  EnforcedStyle: spaces
+
+Layout/IndentationWidth:
+  Width: 2
+
+Layout/EmptyLinesAroundClassBody:
+  EnforcedStyle: no_empty_lines
+
+Layout/EmptyLinesAroundModuleBody:
+  EnforcedStyle: no_empty_lines
+
+Style/ClassAndModuleChildren:
+  EnforcedStyle: nested
+
+Style/OneClassPerFile:
+  Exclude:
+  - "lib/dato/dump/format/toml.rb"
+  - "lib/dato/dump/format/yaml.rb"
+
+Naming/PredicatePrefix:
   Enabled: false
 
 Style/MissingRespondToMissing:

@@ -24,6 +24,7 @@ build.zip
 .codex
 .agents
 agents.md
+docs/environments/local.md
 
 # Temp/cache/logs
 */tmp
@@ -31,4 +32,3 @@ agents.md
 
 # Don't commit
 dato.config.rb
-Gemfile.lock

@@ -1,3 +1,12 @@
+# 0.8.4 (repository release)
+
+* Establish this maintained fork as a repository-distributed continuation of the legacy DatoCMS Ruby client.
+* Retain Ruby 2.7.5 compatibility and constrain dependencies whose newer releases require Ruby 3.
+* Restore a reproducible development lockfile, automated CI and isolated package smoke testing.
+* Align RuboCop and repository-specific Ruby formatting, with the full offline suite passing.
+* Limit ActiveSupport loading to the extensions used by the client and document Ruby 2.7 security-audit exceptions.
+* Exclude development tooling and live-test helpers from the built package.
+
 # 0.7.16
 
 Fixes bug when launching `dato dump --watch` together with the `environment` option.

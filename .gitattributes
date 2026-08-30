@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+*.rb text eol=lf
+bin/* text eol=lf
+exe/dato text eol=lf

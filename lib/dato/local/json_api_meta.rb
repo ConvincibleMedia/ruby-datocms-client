@@ -14,11 +14,7 @@ module Dato
       end
 
       def respond_to_missing?(method, include_private = false)
-        if @payload.key?(method)
-          true
-        else
-          super
-        end
+        @payload.key?(method) || super
       end
 
       private

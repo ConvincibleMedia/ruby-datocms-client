@@ -1,0 +1,9 @@
+---
+# ActiveSupport cannot reach its patched 7.2 branch while Ruby 2.7 remains the
+# compatibility baseline. Dato loads neither SafeBuffer nor the number helpers
+# affected by these low-severity advisories; it now requires only the specific
+# Hash, Object and String extensions used by the client.
+ignore:
+  - CVE-2026-33169
+  - CVE-2026-33170
+  - CVE-2026-33176

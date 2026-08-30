@@ -14,7 +14,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -25,11 +25,11 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:53:45 GMT
+      - Sat, 29 Aug 2026 23:27:57 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '773'
+      - '478'
       Connection:
       - keep-alive
       Server:
@@ -51,13 +51,13 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '29'
       Etag:
-      - W/"e90684e6f28116f314a0b91ed3ea9fbb"
+      - W/"381e3711f0109bd38e0f2be6e5747522"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3359d9c4-560a-46f9-ae95-39a20c0d6391
+      - c2f79ec9-61c5-4c43-a33e-8d87a8f24791
       X-Runtime:
-      - '0.260829'
+      - '0.259117'
       X-Queue-Time:
       - 1ms
       Strict-Transport-Security:
@@ -80,12 +80,12 @@ http_interactions:
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Ray:
-      - a32dc2a66c693690-LHR
+      - a32f544c7bc690ba-LHR
     body:
       encoding: UTF-8
       string: '{"data":{"id":"<DATOCMS_ACCOUNT_SESSION>","type":"session","relationships":{"account":{"data":{"id":"151463","type":"account"}}}},"included":[{"id":"151463","type":"account","attributes":{"email":"vcr-test-account@example.invalid","first_name":"Convincible","last_name":"Test
         Account","company":"Convincible","is_2fa_active":false,"pending_email":null},"relationships":{"active_subscription":{"data":{"id":"137008","type":"per_owner_pricing_subscription"}},"billing_profile":{"data":null},"default_organization":{"data":null}},"meta":{"email_verified":true,"email_verification_token_sent_at":null}}]}'
-  recorded_at: Sat, 29 Aug 2026 18:53:44 GMT
+  recorded_at: Sat, 29 Aug 2026 23:27:57 GMT
 - request:
     method: get
     uri: https://account-api.datocms.com/docs/account-api-hyperschema.json
@@ -105,7 +105,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:53:45 GMT
+      - Sat, 29 Aug 2026 23:27:57 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -140,7 +140,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Cf-Ray:
-      - a32dc2a8bb469a7c-LHR
+      - a32f544e7d7463e8-LHR
     body:
       encoding: ASCII-8BIT
       base64_string: |
@@ -7461,7 +7461,7 @@ http_interactions:
         ICAiJHJlZiI6ICIjL2RlZmluaXRpb25zL3RmYV9kZWFjdGl2YXRlX3JlcXVl
         c3QvZGVmaW5pdGlvbnMvbWV0YSIKICAgICAgICB9CiAgICAgIH0KICAgIH0K
         ICB9Cn0=
-  recorded_at: Sat, 29 Aug 2026 18:53:44 GMT
+  recorded_at: Sat, 29 Aug 2026 23:27:57 GMT
 - request:
     method: post
     uri: https://account-api.datocms.com/sites
@@ -7476,7 +7476,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -7487,11 +7487,11 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:53:46 GMT
+      - Sat, 29 Aug 2026 23:27:57 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '1025'
+      - '592'
       Connection:
       - keep-alive
       Server:
@@ -7513,13 +7513,13 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '29'
       Etag:
-      - W/"58df1c05865652a9328257e41aecc63e"
+      - W/"259f1142ca002b51262ad6534963edfa"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 25fd2a56-5e1a-4b0d-9f03-eb60f23a7fdb
+      - 6e2d7890-9917-4b6d-94bc-002f6c165c92
       X-Runtime:
-      - '0.051863'
+      - '0.058197'
       X-Queue-Time:
       - 1ms
       Strict-Transport-Security:
@@ -7542,12 +7542,12 @@ http_interactions:
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Ray:
-      - a32dc2ab2c022532-LHR
+      - a32f545089793864-LHR
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"229039","type":"site","attributes":{"name":"Integration
-        new test site","domain":null,"internal_subdomain":"integration-new-test-site-4963","last_data_change_at":"2026-08-29T18:53:46.140Z","access_token":"<DATOCMS_ACCESS_TOKEN>","internal_domain":"integration-new-test-site-4963.admin.datocms.com","created_at":"2026-08-29T18:53:46.139Z","readwrite_token":null,"readonly_token":"<DATOCMS_READONLY_TOKEN>","deactivated":false,"status":"ready","is_public_template":false},"relationships":{"active_subscription":{"data":null},"active_plan":{"data":null},"transfer":{"data":null}},"meta":{"last_data_change_at":"2026-08-29T18:53:46.140Z","created_at":"2026-08-29T18:53:46.139Z","deactivated":false,"status":"ready","owner":{"type":"account","email":"vcr-test-account@example.invalid"},"require_2fa":false}}}'
-  recorded_at: Sat, 29 Aug 2026 18:53:44 GMT
+      string: '{"data":{"id":"229047","type":"site","attributes":{"name":"Integration
+        new test site","domain":null,"internal_subdomain":"integration-new-test-site-6974","last_data_change_at":"2026-08-29T23:27:57.618Z","access_token":"<DATOCMS_ACCESS_TOKEN>","internal_domain":"integration-new-test-site-6974.admin.datocms.com","created_at":"2026-08-29T23:27:57.617Z","readwrite_token":null,"readonly_token":"<DATOCMS_READONLY_TOKEN>","deactivated":false,"status":"ready","is_public_template":false},"relationships":{"active_subscription":{"data":null},"active_plan":{"data":null},"transfer":{"data":null}},"meta":{"last_data_change_at":"2026-08-29T23:27:57.618Z","created_at":"2026-08-29T23:27:57.617Z","deactivated":false,"status":"ready","owner":{"type":"account","email":"vcr-test-account@example.invalid"},"require_2fa":false}}}'
+  recorded_at: Sat, 29 Aug 2026 23:27:57 GMT
 - request:
     method: get
     uri: https://site-api.datocms.com/docs/site-api-hyperschema.json
@@ -7567,7 +7567,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:53:46 GMT
+      - Sat, 29 Aug 2026 23:27:57 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -7575,7 +7575,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc2abe95b7e34-LHR
+      - a32f5451da773691-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -33390,7 +33390,7 @@ http_interactions:
         dHJpYnV0ZXMiOiB7CiAgICAgICAgICAiJHJlZiI6ICIjL2RlZmluaXRpb25z
         L3dvcmtmbG93L2RlZmluaXRpb25zL2F0dHJpYnV0ZXMiCiAgICAgICAgfQog
         ICAgICB9CiAgICB9CiAgfQp9
-  recorded_at: Sat, 29 Aug 2026 18:53:44 GMT
+  recorded_at: Sat, 29 Aug 2026 23:27:58 GMT
 - request:
     method: put
     uri: https://site-api.datocms.com/site/activate-non-localized-focal-points
@@ -33405,7 +33405,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -33416,7 +33416,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:53:48 GMT
+      - Sat, 29 Aug 2026 23:28:00 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -33424,7 +33424,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc2b9de219473-LHR
+      - a32f54611ba0fc58-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -33432,7 +33432,7 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"9f6cbac2f03496c8efdcfced2b8b2316"
+      - W/"01bcdd2a3c103f6f528f9889b9961cc7"
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -33465,22 +33465,22 @@ http_interactions:
       X-Permitted-Cross-Domain-Policies:
       - none
       X-Queue-Time:
-      - 1ms
+      - 223ms
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
       - '59'
       X-Request-Id:
-      - 278b9a0a-8558-4481-b182-5c289bca3741
+      - c5bfca3e-74ee-4e98-9cb4-bf89a017f511
       X-Runtime:
-      - '0.015701'
+      - '0.115433'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"229039","type":"site","attributes":{"name":"Integration
-        new test site","theme":{"type":"monochromatic","hue":270,"logo":null},"imgix_host":"www.datocms-assets.com","domain":null,"internal_domain":"integration-new-test-site-4963.admin.datocms.com","locales":["en"],"last_data_change_at":"2026-08-29T18:53:46.140Z","google_maps_api_token":"AIzaSyDMMrHWNDFFrsj-MYvM0ScFmkzA1YmgsAo","global_seo":null,"favicon":null,"no_index":false,"timezone":"Europe/London","require_2fa":false,"ip_tracking_enabled":true,"force_use_of_sandbox_environments":false,"assets_cdn_default_settings":{"image":{"auto":["format"]},"video":{"disable_serving_raw_videos":true}}},"relationships":{"account":{"data":{"id":"151463","type":"account"}},"owner":{"data":{"id":"151463","type":"account"}},"item_types":{"data":[]}},"meta":{"created_at":"2026-08-29T18:53:46.139Z","improved_timezone_management":true,"improved_hex_management":true,"improved_gql_multilocale_fields":true,"improved_gql_visibility_control":true,"improved_boolean_fields":true,"draft_mode_default":true,"improved_validation_at_publishing":true,"improved_exposure_of_inline_blocks_in_cda":true,"improved_items_listing":true,"milliseconds_in_datetime":true,"non_localized_focal_points":true,"custom_upload_storage_settings":false,"allow_custom_theme":false}}}'
-  recorded_at: Sat, 29 Aug 2026 18:53:47 GMT
+      string: '{"data":{"id":"229047","type":"site","attributes":{"name":"Integration
+        new test site","theme":{"type":"monochromatic","hue":270,"logo":null},"imgix_host":"www.datocms-assets.com","domain":null,"internal_domain":"integration-new-test-site-6974.admin.datocms.com","locales":["en"],"last_data_change_at":"2026-08-29T23:27:57.618Z","google_maps_api_token":"AIzaSyDMMrHWNDFFrsj-MYvM0ScFmkzA1YmgsAo","global_seo":null,"favicon":null,"no_index":false,"timezone":"Europe/London","require_2fa":false,"ip_tracking_enabled":true,"force_use_of_sandbox_environments":false,"assets_cdn_default_settings":{"image":{"auto":["format"]},"video":{"disable_serving_raw_videos":true}}},"relationships":{"account":{"data":{"id":"151463","type":"account"}},"owner":{"data":{"id":"151463","type":"account"}},"item_types":{"data":[]}},"meta":{"created_at":"2026-08-29T23:27:57.617Z","improved_timezone_management":true,"improved_hex_management":true,"improved_gql_multilocale_fields":true,"improved_gql_visibility_control":true,"improved_boolean_fields":true,"draft_mode_default":true,"improved_validation_at_publishing":true,"improved_exposure_of_inline_blocks_in_cda":true,"improved_items_listing":true,"milliseconds_in_datetime":true,"non_localized_focal_points":true,"custom_upload_storage_settings":false,"allow_custom_theme":false}}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:00 GMT
 - request:
     method: get
     uri: https://site-api.datocms.com/site
@@ -33495,7 +33495,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -33506,7 +33506,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:53:48 GMT
+      - Sat, 29 Aug 2026 23:28:00 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -33514,7 +33514,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc2ba8dc8edfa-LHR
+      - a32f54639ef82534-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -33522,7 +33522,7 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"9f6cbac2f03496c8efdcfced2b8b2316"
+      - W/"01bcdd2a3c103f6f528f9889b9961cc7"
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -33555,28 +33555,28 @@ http_interactions:
       X-Permitted-Cross-Domain-Policies:
       - none
       X-Queue-Time:
-      - 1ms
+      - 3ms
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
       - '58'
       X-Request-Id:
-      - 17a84b0b-8670-4557-a3fe-8d22d1785e44
+      - 9286b404-3aaa-4b81-8775-f778626cc0dd
       X-Runtime:
-      - '0.013400'
+      - '0.019859'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"229039","type":"site","attributes":{"name":"Integration
-        new test site","theme":{"type":"monochromatic","hue":270,"logo":null},"imgix_host":"www.datocms-assets.com","domain":null,"internal_domain":"integration-new-test-site-4963.admin.datocms.com","locales":["en"],"last_data_change_at":"2026-08-29T18:53:46.140Z","google_maps_api_token":"AIzaSyDMMrHWNDFFrsj-MYvM0ScFmkzA1YmgsAo","global_seo":null,"favicon":null,"no_index":false,"timezone":"Europe/London","require_2fa":false,"ip_tracking_enabled":true,"force_use_of_sandbox_environments":false,"assets_cdn_default_settings":{"image":{"auto":["format"]},"video":{"disable_serving_raw_videos":true}}},"relationships":{"account":{"data":{"id":"151463","type":"account"}},"owner":{"data":{"id":"151463","type":"account"}},"item_types":{"data":[]}},"meta":{"created_at":"2026-08-29T18:53:46.139Z","improved_timezone_management":true,"improved_hex_management":true,"improved_gql_multilocale_fields":true,"improved_gql_visibility_control":true,"improved_boolean_fields":true,"draft_mode_default":true,"improved_validation_at_publishing":true,"improved_exposure_of_inline_blocks_in_cda":true,"improved_items_listing":true,"milliseconds_in_datetime":true,"non_localized_focal_points":true,"custom_upload_storage_settings":false,"allow_custom_theme":false}}}'
-  recorded_at: Sat, 29 Aug 2026 18:53:47 GMT
+      string: '{"data":{"id":"229047","type":"site","attributes":{"name":"Integration
+        new test site","theme":{"type":"monochromatic","hue":270,"logo":null},"imgix_host":"www.datocms-assets.com","domain":null,"internal_domain":"integration-new-test-site-6974.admin.datocms.com","locales":["en"],"last_data_change_at":"2026-08-29T23:27:57.618Z","google_maps_api_token":"AIzaSyDMMrHWNDFFrsj-MYvM0ScFmkzA1YmgsAo","global_seo":null,"favicon":null,"no_index":false,"timezone":"Europe/London","require_2fa":false,"ip_tracking_enabled":true,"force_use_of_sandbox_environments":false,"assets_cdn_default_settings":{"image":{"auto":["format"]},"video":{"disable_serving_raw_videos":true}}},"relationships":{"account":{"data":{"id":"151463","type":"account"}},"owner":{"data":{"id":"151463","type":"account"}},"item_types":{"data":[]}},"meta":{"created_at":"2026-08-29T23:27:57.617Z","improved_timezone_management":true,"improved_hex_management":true,"improved_gql_multilocale_fields":true,"improved_gql_visibility_control":true,"improved_boolean_fields":true,"draft_mode_default":true,"improved_validation_at_publishing":true,"improved_exposure_of_inline_blocks_in_cda":true,"improved_items_listing":true,"milliseconds_in_datetime":true,"non_localized_focal_points":true,"custom_upload_storage_settings":false,"allow_custom_theme":false}}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:00 GMT
 - request:
     method: put
     uri: https://site-api.datocms.com/site
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"229039","type":"site","attributes":{"no_index":false,"favicon":null,"global_seo":null,"name":"Integration
+      string: '{"data":{"id":"229047","type":"site","attributes":{"no_index":false,"favicon":null,"global_seo":null,"name":"Integration
         new test site","locales":["en","it"],"timezone":"Europe/London","require_2fa":false,"ip_tracking_enabled":true,"force_use_of_sandbox_environments":false}}}'
     headers:
       Accept:
@@ -33586,7 +33586,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -33597,7 +33597,7 @@ http_interactions:
       message: Accepted
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:53:48 GMT
+      - Sat, 29 Aug 2026 23:28:00 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -33605,7 +33605,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc2bb1cda5630-LHR
+      - a32f54642ba0cd9d-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -33650,18 +33650,18 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '57'
       X-Request-Id:
-      - 1c8c1955-e530-4b9b-a2bb-33255192f7c9
+      - f4227fa7-65d7-44fd-b2d1-e1c04c3b0b2e
       X-Runtime:
-      - '0.013437'
+      - '0.016113'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"0076791b0f078842ac6df0a6","type":"job"}}'
-  recorded_at: Sat, 29 Aug 2026 18:53:47 GMT
+      string: '{"data":{"id":"1b072ca45da02d58279a6681","type":"job"}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:00 GMT
 - request:
     method: get
-    uri: https://site-api.datocms.com/job-results/0076791b0f078842ac6df0a6
+    uri: https://site-api.datocms.com/job-results/1b072ca45da02d58279a6681
     body:
       encoding: US-ASCII
       string: ''
@@ -33673,7 +33673,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -33684,7 +33684,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:53:49 GMT
+      - Sat, 29 Aug 2026 23:28:01 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -33692,7 +33692,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc2c22cdac6b6-LHR
+      - a32f546baaa63859-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -33700,7 +33700,7 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"49de7fb8dbf86aa137103a7ca1baf7c1"
+      - W/"d7e5f49735f94718c45da83c55fcf391"
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -33733,22 +33733,22 @@ http_interactions:
       X-Permitted-Cross-Domain-Policies:
       - none
       X-Queue-Time:
-      - 1ms
+      - 0ms
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
       - '56'
       X-Request-Id:
-      - 376c0052-4bf5-47c9-9e49-9008c4a7d1d6
+      - 879f8dc5-7d88-4858-85dd-cf7ab6e4e95c
       X-Runtime:
-      - '0.011642'
+      - '0.011377'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"0076791b0f078842ac6df0a6","type":"job_result","attributes":{"payload":{"data":{"id":"229039","type":"site","attributes":{"name":"Integration
-        new test site","theme":{"type":"monochromatic","hue":270,"logo":null},"imgix_host":"www.datocms-assets.com","domain":null,"internal_domain":"integration-new-test-site-4963.admin.datocms.com","locales":["en","it"],"last_data_change_at":"2026-08-29T18:53:46.140Z","google_maps_api_token":"AIzaSyDMMrHWNDFFrsj-MYvM0ScFmkzA1YmgsAo","global_seo":{"en":null,"it":null},"favicon":null,"no_index":false,"timezone":"Europe/London","require_2fa":false,"ip_tracking_enabled":true,"force_use_of_sandbox_environments":false,"assets_cdn_default_settings":{"image":{"auto":["format"]},"video":{"disable_serving_raw_videos":true}}},"relationships":{"account":{"data":{"id":"151463","type":"account"}},"owner":{"data":{"id":"151463","type":"account"}},"item_types":{"data":[]}},"meta":{"created_at":"2026-08-29T18:53:46.139Z","improved_timezone_management":true,"improved_hex_management":true,"improved_gql_multilocale_fields":true,"improved_gql_visibility_control":true,"improved_boolean_fields":true,"draft_mode_default":true,"improved_validation_at_publishing":true,"improved_exposure_of_inline_blocks_in_cda":true,"improved_items_listing":true,"milliseconds_in_datetime":true,"non_localized_focal_points":true,"custom_upload_storage_settings":false,"allow_custom_theme":false}}},"status":200,"statusText":"OK"}}}'
-  recorded_at: Sat, 29 Aug 2026 18:53:48 GMT
+      string: '{"data":{"id":"1b072ca45da02d58279a6681","type":"job_result","attributes":{"payload":{"data":{"id":"229047","type":"site","attributes":{"name":"Integration
+        new test site","theme":{"type":"monochromatic","hue":270,"logo":null},"imgix_host":"www.datocms-assets.com","domain":null,"internal_domain":"integration-new-test-site-6974.admin.datocms.com","locales":["en","it"],"last_data_change_at":"2026-08-29T23:27:57.618Z","google_maps_api_token":"AIzaSyDMMrHWNDFFrsj-MYvM0ScFmkzA1YmgsAo","global_seo":{"en":null,"it":null},"favicon":null,"no_index":false,"timezone":"Europe/London","require_2fa":false,"ip_tracking_enabled":true,"force_use_of_sandbox_environments":false,"assets_cdn_default_settings":{"image":{"auto":["format"]},"video":{"disable_serving_raw_videos":true}}},"relationships":{"account":{"data":{"id":"151463","type":"account"}},"owner":{"data":{"id":"151463","type":"account"}},"item_types":{"data":[]}},"meta":{"created_at":"2026-08-29T23:27:57.617Z","improved_timezone_management":true,"improved_hex_management":true,"improved_gql_multilocale_fields":true,"improved_gql_visibility_control":true,"improved_boolean_fields":true,"draft_mode_default":true,"improved_validation_at_publishing":true,"improved_exposure_of_inline_blocks_in_cda":true,"improved_items_listing":true,"milliseconds_in_datetime":true,"non_localized_focal_points":true,"custom_upload_storage_settings":false,"allow_custom_theme":false}}},"status":200,"statusText":"OK"}}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:01 GMT
 - request:
     method: post
     uri: https://site-api.datocms.com/item-types
@@ -33763,7 +33763,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -33774,7 +33774,7 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:53:49 GMT
+      - Sat, 29 Aug 2026 23:28:02 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -33782,7 +33782,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc2c2bd65789f-LHR
+      - a32f546c6a43d675-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -33790,7 +33790,7 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"c928828d27e0a6e01a66fed2695626c7"
+      - W/"09916f4394a3cd4760e8273d58964158"
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -33829,18 +33829,18 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '55'
       X-Request-Id:
-      - 17af03e4-51b2-4df0-9441-56eff22e7e4d
+      - b4e9db8d-a471-4437-b76a-6e5f1030cd13
       X-Runtime:
-      - '0.045052'
+      - '0.052154'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"B6ryW4ClS7SOuN-aws3-Fg","type":"item_type","attributes":{"name":"Article","singleton":false,"sortable":false,"api_key":"article","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":null},"presentation_image_field":{"data":null},"title_field":{"data":null},"image_preview_field":{"data":null},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}}'
-  recorded_at: Sat, 29 Aug 2026 18:53:48 GMT
+      string: '{"data":{"id":"U8LYMqufSqiL5HG1TH08gg","type":"item_type","attributes":{"name":"Article","singleton":false,"sortable":false,"api_key":"article","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":null},"presentation_image_field":{"data":null},"title_field":{"data":null},"image_preview_field":{"data":null},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:02 GMT
 - request:
     method: post
-    uri: https://site-api.datocms.com/item-types/B6ryW4ClS7SOuN-aws3-Fg/fields
+    uri: https://site-api.datocms.com/item-types/U8LYMqufSqiL5HG1TH08gg/fields
     body:
       encoding: UTF-8
       string: '{"data":{"type":"field","attributes":{"label":"Title","field_type":"string","api_key":"title","localized":true,"validators":{"required":{}},"hint":""}}}'
@@ -33852,7 +33852,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -33863,7 +33863,7 @@ http_interactions:
       message: Accepted
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:53:50 GMT
+      - Sat, 29 Aug 2026 23:28:02 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -33871,7 +33871,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc2c37c1ccd0c-LHR
+      - a32f546d1b548882-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -33916,18 +33916,18 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '54'
       X-Request-Id:
-      - 74cb1449-ea8b-4b78-9d7e-a55150c09bb5
+      - facf82cf-650b-41ea-8629-caf2c3e7bbab
       X-Runtime:
-      - '0.016450'
+      - '0.017533'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"a18bdb0b330bcef03f00d7fb","type":"job"}}'
-  recorded_at: Sat, 29 Aug 2026 18:53:48 GMT
+      string: '{"data":{"id":"ad9b5d0a653e0d08b505e644","type":"job"}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:02 GMT
 - request:
     method: get
-    uri: https://site-api.datocms.com/job-results/a18bdb0b330bcef03f00d7fb
+    uri: https://site-api.datocms.com/job-results/ad9b5d0a653e0d08b505e644
     body:
       encoding: US-ASCII
       string: ''
@@ -33939,7 +33939,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -33950,7 +33950,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:53:51 GMT
+      - Sat, 29 Aug 2026 23:28:03 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -33958,7 +33958,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc2cac8e7634d-LHR
+      - a32f5473d987cd38-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -33966,7 +33966,7 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"169184371f2e0f8d1434ebb1de9ced86"
+      - W/"13b2cc6232ebadc81ca46a4522d2d195"
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -34005,21 +34005,21 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '59'
       X-Request-Id:
-      - 5b162da5-ca72-485e-8c54-d4a8b691a7d7
+      - '068f61c5-7f9e-412d-b221-dcd6eeff76ae'
       X-Runtime:
-      - '0.012614'
+      - '0.012233'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"a18bdb0b330bcef03f00d7fb","type":"job_result","attributes":{"payload":{"data":{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field","attributes":{"label":"Title","field_type":"string","api_key":"title","hint":null,"localized":true,"validators":{"required":{}},"position":1,"appearance":{"editor":"single_line","parameters":{"heading":false,"placeholder":null},"addons":[]},"default_value":{"en":null,"it":null},"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"B6ryW4ClS7SOuN-aws3-Fg","type":"item_type"}},"fieldset":{"data":null}}},"included":[{"id":"B6ryW4ClS7SOuN-aws3-Fg","type":"item_type","attributes":{"name":"Article","singleton":false,"sortable":false,"api_key":"article","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"}},"presentation_image_field":{"data":null},"title_field":{"data":{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"}},"image_preview_field":{"data":null},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}]},"status":201,"statusText":"Created"}}}'
-  recorded_at: Sat, 29 Aug 2026 18:53:49 GMT
+      string: '{"data":{"id":"ad9b5d0a653e0d08b505e644","type":"job_result","attributes":{"payload":{"data":{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field","attributes":{"label":"Title","field_type":"string","api_key":"title","hint":null,"localized":true,"validators":{"required":{}},"position":1,"appearance":{"editor":"single_line","parameters":{"heading":false,"placeholder":null},"addons":[]},"default_value":{"en":null,"it":null},"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"U8LYMqufSqiL5HG1TH08gg","type":"item_type"}},"fieldset":{"data":null}}},"included":[{"id":"U8LYMqufSqiL5HG1TH08gg","type":"item_type","attributes":{"name":"Article","singleton":false,"sortable":false,"api_key":"article","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"}},"presentation_image_field":{"data":null},"title_field":{"data":{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"}},"image_preview_field":{"data":null},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}]},"status":201,"statusText":"Created"}}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:03 GMT
 - request:
     method: post
-    uri: https://site-api.datocms.com/item-types/B6ryW4ClS7SOuN-aws3-Fg/fields
+    uri: https://site-api.datocms.com/item-types/U8LYMqufSqiL5HG1TH08gg/fields
     body:
       encoding: UTF-8
-      string: '{"data":{"type":"field","attributes":{"label":"Slug","field_type":"slug","api_key":"slug","localized":false,"validators":{"required":{},"slug_title_field":{"title_field_id":"CfjqtRhiS16MdFnMqtcRBw"}},"hint":""}}}'
+      string: '{"data":{"type":"field","attributes":{"label":"Slug","field_type":"slug","api_key":"slug","localized":false,"validators":{"required":{},"slug_title_field":{"title_field_id":"Y3toIuWQShSbHr_7e8zPHA"}},"hint":""}}}'
     headers:
       Accept:
       - application/json
@@ -34028,7 +34028,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -34039,7 +34039,7 @@ http_interactions:
       message: Accepted
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:53:51 GMT
+      - Sat, 29 Aug 2026 23:28:04 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -34047,7 +34047,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc2cb5f2b8a0e-LHR
+      - a32f547afa24591e-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -34092,18 +34092,18 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '58'
       X-Request-Id:
-      - 6207c222-f645-4758-ba09-53e942901030
+      - d4ac7b3c-7e9f-4ea1-8f08-5d2b2727693c
       X-Runtime:
-      - '0.017821'
+      - '0.015612'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"438ab7b13d0e625f68b97843","type":"job"}}'
-  recorded_at: Sat, 29 Aug 2026 18:53:49 GMT
+      string: '{"data":{"id":"0c6e057149347d94be56655f","type":"job"}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:04 GMT
 - request:
     method: get
-    uri: https://site-api.datocms.com/job-results/438ab7b13d0e625f68b97843
+    uri: https://site-api.datocms.com/job-results/0c6e057149347d94be56655f
     body:
       encoding: US-ASCII
       string: ''
@@ -34115,7 +34115,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -34126,7 +34126,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:53:52 GMT
+      - Sat, 29 Aug 2026 23:28:05 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -34134,7 +34134,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc2d24dec93ee-LHR
+      - a32f5481b8eb6540-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -34142,7 +34142,7 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"dd7c3b0d1fba16ed69d740b051677468"
+      - W/"09f420188eedc869bc40d69a633e1da0"
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -34175,24 +34175,24 @@ http_interactions:
       X-Permitted-Cross-Domain-Policies:
       - none
       X-Queue-Time:
-      - 0ms
+      - 1ms
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
       - '57'
       X-Request-Id:
-      - f5636762-df87-457a-8b35-dd52b3d6cb2e
+      - 68096e54-d570-4c47-bb01-c10359686e8b
       X-Runtime:
-      - '0.011686'
+      - '0.011783'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"438ab7b13d0e625f68b97843","type":"job_result","attributes":{"payload":{"data":{"id":"ARiQqNdvSg-px6BuOYe8Wg","type":"field","attributes":{"label":"Slug","field_type":"slug","api_key":"slug","hint":null,"localized":false,"validators":{"required":{},"slug_title_field":{"title_field_id":"CfjqtRhiS16MdFnMqtcRBw"}},"position":2,"appearance":{"editor":"slug","parameters":{"url_prefix":null,"placeholder":null},"addons":[]},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"B6ryW4ClS7SOuN-aws3-Fg","type":"item_type"}},"fieldset":{"data":null}}},"included":[{"id":"B6ryW4ClS7SOuN-aws3-Fg","type":"item_type","attributes":{"name":"Article","singleton":false,"sortable":false,"api_key":"article","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"},{"id":"ARiQqNdvSg-px6BuOYe8Wg","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"}},"presentation_image_field":{"data":null},"title_field":{"data":{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"}},"image_preview_field":{"data":null},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}]},"status":201,"statusText":"Created"}}}'
-  recorded_at: Sat, 29 Aug 2026 18:53:51 GMT
+      string: '{"data":{"id":"0c6e057149347d94be56655f","type":"job_result","attributes":{"payload":{"data":{"id":"WTGKMTVASXuMYjqtVtYaDw","type":"field","attributes":{"label":"Slug","field_type":"slug","api_key":"slug","hint":null,"localized":false,"validators":{"required":{},"slug_title_field":{"title_field_id":"Y3toIuWQShSbHr_7e8zPHA"}},"position":2,"appearance":{"editor":"slug","parameters":{"url_prefix":null,"placeholder":null},"addons":[]},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"U8LYMqufSqiL5HG1TH08gg","type":"item_type"}},"fieldset":{"data":null}}},"included":[{"id":"U8LYMqufSqiL5HG1TH08gg","type":"item_type","attributes":{"name":"Article","singleton":false,"sortable":false,"api_key":"article","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"},{"id":"WTGKMTVASXuMYjqtVtYaDw","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"}},"presentation_image_field":{"data":null},"title_field":{"data":{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"}},"image_preview_field":{"data":null},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}]},"status":201,"statusText":"Created"}}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:05 GMT
 - request:
     method: post
-    uri: https://site-api.datocms.com/item-types/B6ryW4ClS7SOuN-aws3-Fg/fields
+    uri: https://site-api.datocms.com/item-types/U8LYMqufSqiL5HG1TH08gg/fields
     body:
       encoding: UTF-8
       string: '{"data":{"type":"field","attributes":{"label":"Image","field_type":"file","api_key":"image","localized":false,"validators":{"required":{},"extension":{"predefined_list":"image"}},"hint":""}}}'
@@ -34204,7 +34204,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -34215,7 +34215,7 @@ http_interactions:
       message: Accepted
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:53:52 GMT
+      - Sat, 29 Aug 2026 23:28:05 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -34223,7 +34223,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc2d2df9f6329-LHR
+      - a32f548238bb8877-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -34262,24 +34262,24 @@ http_interactions:
       X-Permitted-Cross-Domain-Policies:
       - none
       X-Queue-Time:
-      - 0ms
+      - 1ms
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
       - '56'
       X-Request-Id:
-      - 88985fd5-5e16-470d-8038-a7e6e3240345
+      - 24daef71-40c6-4f6f-a865-30228dd48185
       X-Runtime:
-      - '0.016664'
+      - '0.016767'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"112c8d647d93d18aa8bd4997","type":"job"}}'
-  recorded_at: Sat, 29 Aug 2026 18:53:51 GMT
+      string: '{"data":{"id":"c6f76cc3b141c71d2d95ffc0","type":"job"}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:05 GMT
 - request:
     method: get
-    uri: https://site-api.datocms.com/job-results/112c8d647d93d18aa8bd4997
+    uri: https://site-api.datocms.com/job-results/c6f76cc3b141c71d2d95ffc0
     body:
       encoding: US-ASCII
       string: ''
@@ -34291,7 +34291,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -34302,7 +34302,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:53:53 GMT
+      - Sat, 29 Aug 2026 23:28:06 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -34310,7 +34310,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc2d9dc2f1d4e-LHR
+      - a32f54894832c4f0-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -34318,7 +34318,7 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"f8a2f5d19e1319c62287d2c93ca56dad"
+      - W/"24344ce391c9bce983d98f8fe7be7844"
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -34355,17 +34355,17 @@ http_interactions:
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
-      - '55'
+      - '59'
       X-Request-Id:
-      - 5a34e047-6e61-4de3-bfd6-ad253f4cc54e
+      - 79be9990-a1f0-4926-bbe7-a0254ed10792
       X-Runtime:
-      - '0.013529'
+      - '0.011557'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"112c8d647d93d18aa8bd4997","type":"job_result","attributes":{"payload":{"data":{"id":"HR1QY6qCTaaB-huf10UM7w","type":"field","attributes":{"label":"Image","field_type":"file","api_key":"image","hint":null,"localized":false,"validators":{"required":{},"extension":{"extensions":[],"predefined_list":"image"}},"position":3,"appearance":{"editor":"file","parameters":{},"addons":[]},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"B6ryW4ClS7SOuN-aws3-Fg","type":"item_type"}},"fieldset":{"data":null}}},"included":[{"id":"B6ryW4ClS7SOuN-aws3-Fg","type":"item_type","attributes":{"name":"Article","singleton":false,"sortable":false,"api_key":"article","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"},{"id":"ARiQqNdvSg-px6BuOYe8Wg","type":"field"},{"id":"HR1QY6qCTaaB-huf10UM7w","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"}},"presentation_image_field":{"data":{"id":"HR1QY6qCTaaB-huf10UM7w","type":"field"}},"title_field":{"data":{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"}},"image_preview_field":{"data":{"id":"HR1QY6qCTaaB-huf10UM7w","type":"field"}},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}]},"status":201,"statusText":"Created"}}}'
-  recorded_at: Sat, 29 Aug 2026 18:53:52 GMT
+      string: '{"data":{"id":"c6f76cc3b141c71d2d95ffc0","type":"job_result","attributes":{"payload":{"data":{"id":"BOdQVEsOQiilsXb9QB7yYw","type":"field","attributes":{"label":"Image","field_type":"file","api_key":"image","hint":null,"localized":false,"validators":{"required":{},"extension":{"extensions":[],"predefined_list":"image"}},"position":3,"appearance":{"editor":"file","parameters":{},"addons":[]},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"U8LYMqufSqiL5HG1TH08gg","type":"item_type"}},"fieldset":{"data":null}}},"included":[{"id":"U8LYMqufSqiL5HG1TH08gg","type":"item_type","attributes":{"name":"Article","singleton":false,"sortable":false,"api_key":"article","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"},{"id":"WTGKMTVASXuMYjqtVtYaDw","type":"field"},{"id":"BOdQVEsOQiilsXb9QB7yYw","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"}},"presentation_image_field":{"data":{"id":"BOdQVEsOQiilsXb9QB7yYw","type":"field"}},"title_field":{"data":{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"}},"image_preview_field":{"data":{"id":"BOdQVEsOQiilsXb9QB7yYw","type":"field"}},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}]},"status":201,"statusText":"Created"}}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:06 GMT
 - request:
     method: post
     uri: https://site-api.datocms.com/upload-requests
@@ -34380,7 +34380,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -34391,7 +34391,7 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:53:53 GMT
+      - Sat, 29 Aug 2026 23:28:06 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -34399,7 +34399,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc2da6a913075-LHR
+      - a32f5489b946a690-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -34407,7 +34407,7 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"e64a55e2a99643f63163e8a616c0e7ee"
+      - W/"ce194f521bfcc215dcd454e61df8b146"
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -34440,21 +34440,21 @@ http_interactions:
       X-Permitted-Cross-Domain-Policies:
       - none
       X-Queue-Time:
-      - 0ms
+      - 1ms
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
-      - '54'
+      - '58'
       X-Request-Id:
-      - 3920fcd8-245b-418e-abf0-bef90bc1bd4c
+      - 8b882142-1a71-4074-9fcd-c2c1787a1dd7
       X-Runtime:
-      - '0.015984'
+      - '0.014663'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"/229039/1788029633-1549027974-logo.png","type":"upload_request","attributes":{"url":"https://datocms-assets.6c36efb897e5eae1d2a887cfa632eea9.eu.r2.cloudflarestorage.com/229039/1788029633-1549027974-logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=43952c4b5f6e8765319bc8af0073c64c%2F20260829%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260829T185353Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=5fa34302f6c80162d301610c6852a3d4d0702fb50772c1daffc515b37734a132","request_headers":{}}}}'
-  recorded_at: Sat, 29 Aug 2026 18:53:52 GMT
+      string: '{"data":{"id":"/229047/1788046086-1549027974-logo.png","type":"upload_request","attributes":{"url":"https://datocms-assets.6c36efb897e5eae1d2a887cfa632eea9.eu.r2.cloudflarestorage.com/229047/1788046086-1549027974-logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=43952c4b5f6e8765319bc8af0073c64c%2F20260829%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260829T232806Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=7f8bc4551f4b8eb63b43f763c9c1bb2ec1a57363bc95ac215fd02b7f94d59991","request_headers":{}}}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:06 GMT
 - request:
     method: get
     uri: https://www.datocms-assets.com/205/1549027974-logo.png
@@ -34474,7 +34474,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:53:53 GMT
+      - Sat, 29 Aug 2026 23:28:06 GMT
       Content-Type:
       - image/png
       Content-Length:
@@ -34482,7 +34482,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc2db2c2dbe95-LHR
+      - a32f548a2d9ec0d8-LHR
       Cf-Cache-Status:
       - HIT
       Accept-Ranges:
@@ -34490,7 +34490,7 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Age:
-      - '9238055'
+      - '9254508'
       Cache-Control:
       - public, max-age=31536000
       Last-Modified:
@@ -37167,10 +37167,10 @@ http_interactions:
         DBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMG
         DBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQMGDBgwYMCAAQNv
         IGEo6Z7rHI7lAAAAAElFTkSuQmCC
-  recorded_at: Sat, 29 Aug 2026 18:53:52 GMT
+  recorded_at: Sat, 29 Aug 2026 23:28:06 GMT
 - request:
     method: put
-    uri: https://datocms-assets.6c36efb897e5eae1d2a887cfa632eea9.eu.r2.cloudflarestorage.com/229039/1788029633-1549027974-logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=43952c4b5f6e8765319bc8af0073c64c/20260829/auto/s3/aws4_request&X-Amz-Date=20260829T185353Z&X-Amz-Expires=900&X-Amz-Signature=5fa34302f6c80162d301610c6852a3d4d0702fb50772c1daffc515b37734a132&X-Amz-SignedHeaders=host
+    uri: https://datocms-assets.6c36efb897e5eae1d2a887cfa632eea9.eu.r2.cloudflarestorage.com/229047/1788046086-1549027974-logo.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=43952c4b5f6e8765319bc8af0073c64c/20260829/auto/s3/aws4_request&X-Amz-Date=20260829T232806Z&X-Amz-Expires=900&X-Amz-Signature=7f8bc4551f4b8eb63b43f763c9c1bb2ec1a57363bc95ac215fd02b7f94d59991&X-Amz-SignedHeaders=host
     body:
       encoding: ASCII-8BIT
       base64_string: |
@@ -39842,7 +39842,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:53:54 GMT
+      - Sat, 29 Aug 2026 23:28:07 GMT
       Content-Type:
       - text/plain;charset=UTF-8
       Content-Length:
@@ -39854,21 +39854,21 @@ http_interactions:
       X-Amz-Checksum-Crc64nvme:
       - oyCMMsTBjAc=
       X-Amz-Version-Id:
-      - 7e5fb120fa64430b7ded2df569b6776e
+      - 7e5fb025ed1e97e85a484bf7bfdb7c84
       Server:
       - cloudflare
       Cf-Ray:
-      - a32dc2dbacb7beb9-LHR
+      - a32f548abed10ac6-LHR
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Sat, 29 Aug 2026 18:53:52 GMT
+  recorded_at: Sat, 29 Aug 2026 23:28:07 GMT
 - request:
     method: post
     uri: https://site-api.datocms.com/uploads
     body:
       encoding: UTF-8
-      string: '{"data":{"type":"upload","attributes":{"path":"/229039/1788029633-1549027974-logo.png","default_field_metadata":{"alt":{"en":"My
+      string: '{"data":{"type":"upload","attributes":{"path":"/229047/1788046086-1549027974-logo.png","default_field_metadata":{"alt":{"en":"My
         first post","it":"Il mio primo post"},"title":{"en":"First post","it":"Primo
         post"},"custom_data":{"en":{},"it":{}},"focal_point":{"x":0.1,"y":0.1}}}}}'
     headers:
@@ -39879,7 +39879,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -39890,7 +39890,7 @@ http_interactions:
       message: Accepted
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:53:54 GMT
+      - Sat, 29 Aug 2026 23:28:07 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -39898,181 +39898,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc2ddbad5f8ba-LHR
-      Cf-Cache-Status:
-      - DYNAMIC
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - no-cache
-      Server:
-      - cloudflare
-      Strict-Transport-Security:
-      - max-age=15552000; includeSubDomains; preload
-      Vary:
-      - Accept,Accept-Encoding
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - authorization, content-type, user-agent, x-api-version, x-base-editing-url,
-        x-cache-tags, x-datocms-trace, x-environment, x-exclude-invalid, x-include-drafts,
-        x-organization, x-session-id, x-site-domain, x-visual-editing
-      Access-Control-Allow-Methods:
-      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
-      Access-Control-Expose-Headers:
-      - x-cache-tags, x-complexity, x-entities, x-max-complexity, x-ratelimit-limit,
-        x-ratelimit-remaining, x-ratelimit-reset
-      Access-Control-Max-Age:
-      - '1728000'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      X-Api-Version:
-      - '3'
-      X-Content-Type-Options:
-      - nosniff
-      X-Environment:
-      - main
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      X-Queue-Time:
-      - 0ms
-      X-Ratelimit-Limit:
-      - '60'
-      X-Ratelimit-Remaining:
-      - '59'
-      X-Request-Id:
-      - 04c654bc-0c6b-4508-ae4a-3b8f2373fc7f
-      X-Runtime:
-      - '0.015405'
-      X-Xss-Protection:
-      - '0'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"a3ad8e4c926143c7fa2f6768","type":"job"}}'
-  recorded_at: Sat, 29 Aug 2026 18:53:52 GMT
-- request:
-    method: get
-    uri: https://site-api.datocms.com/job-results/a3ad8e4c926143c7fa2f6768
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json
-      Authorization:
-      - Bearer <DATOCMS_TOKEN>
-      User-Agent:
-      - ruby-client v0.8.3
-      X-Api-Version:
-      - '3'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 404
-      message: Not Found
-    headers:
-      Date:
-      - Sat, 29 Aug 2026 18:53:55 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Cf-Ray:
-      - a32dc2e49ad6d1fa-LHR
-      Cf-Cache-Status:
-      - DYNAMIC
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - no-cache
-      Server:
-      - cloudflare
-      Strict-Transport-Security:
-      - max-age=15552000; includeSubDomains; preload
-      Vary:
-      - Accept,Accept-Encoding
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - authorization, content-type, user-agent, x-api-version, x-base-editing-url,
-        x-cache-tags, x-datocms-trace, x-environment, x-exclude-invalid, x-include-drafts,
-        x-organization, x-session-id, x-site-domain, x-visual-editing
-      Access-Control-Allow-Methods:
-      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
-      Access-Control-Expose-Headers:
-      - x-cache-tags, x-complexity, x-entities, x-max-complexity, x-ratelimit-limit,
-        x-ratelimit-remaining, x-ratelimit-reset
-      Access-Control-Max-Age:
-      - '1728000'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      X-Api-Version:
-      - '3'
-      X-Content-Type-Options:
-      - nosniff
-      X-Environment:
-      - main
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      X-Queue-Time:
-      - 1ms
-      X-Ratelimit-Limit:
-      - '60'
-      X-Ratelimit-Remaining:
-      - '58'
-      X-Request-Id:
-      - 2e3fda89-f5b0-46b8-ad90-be5325838f25
-      X-Runtime:
-      - '0.013555'
-      X-Xss-Protection:
-      - '0'
-    body:
-      encoding: UTF-8
-      string: '{"data":[{"id":"302048","type":"api_error","attributes":{"code":"NOT_FOUND","details":{},"doc_url":"https://www.datocms.com/docs/content-management-api/errors#NOT_FOUND"}}]}'
-  recorded_at: Sat, 29 Aug 2026 18:53:53 GMT
-- request:
-    method: get
-    uri: https://site-api.datocms.com/job-results/a3ad8e4c926143c7fa2f6768
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json
-      Authorization:
-      - Bearer <DATOCMS_TOKEN>
-      User-Agent:
-      - ruby-client v0.8.3
-      X-Api-Version:
-      - '3'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 404
-      message: Not Found
-    headers:
-      Date:
-      - Sat, 29 Aug 2026 18:53:56 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Cf-Ray:
-      - a32dc2eb7ef6adda-LHR
+      - a32f548cfbe1cd7d-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -40117,18 +39943,18 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '57'
       X-Request-Id:
-      - 047f9c57-90c4-40f8-a273-abc91518feec
+      - 0ff83662-6fb3-4e0b-a4ca-7aed5a17cf96
       X-Runtime:
-      - '0.011768'
+      - '0.014645'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"302048","type":"api_error","attributes":{"code":"NOT_FOUND","details":{},"doc_url":"https://www.datocms.com/docs/content-management-api/errors#NOT_FOUND"}}]}'
-  recorded_at: Sat, 29 Aug 2026 18:53:55 GMT
+      string: '{"data":{"id":"2a6e95e6148a07ec3323c385","type":"job"}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:07 GMT
 - request:
     method: get
-    uri: https://site-api.datocms.com/job-results/a3ad8e4c926143c7fa2f6768
+    uri: https://site-api.datocms.com/job-results/2a6e95e6148a07ec3323c385
     body:
       encoding: US-ASCII
       string: ''
@@ -40140,7 +39966,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -40151,7 +39977,7 @@ http_interactions:
       message: Not Found
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:53:57 GMT
+      - Sat, 29 Aug 2026 23:28:08 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -40159,7 +39985,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc2f25d78f65b-LHR
+      - a32f5493ff837d93-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -40202,20 +40028,20 @@ http_interactions:
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
-      - '59'
+      - '56'
       X-Request-Id:
-      - 5ef954fb-8d1d-4063-8e40-a7866e730a90
+      - 35508b84-2418-4b90-b88c-7f1bbdfa9abc
       X-Runtime:
-      - '0.011522'
+      - '0.012305'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"302048","type":"api_error","attributes":{"code":"NOT_FOUND","details":{},"doc_url":"https://www.datocms.com/docs/content-management-api/errors#NOT_FOUND"}}]}'
-  recorded_at: Sat, 29 Aug 2026 18:53:56 GMT
+  recorded_at: Sat, 29 Aug 2026 23:28:08 GMT
 - request:
     method: get
-    uri: https://site-api.datocms.com/job-results/a3ad8e4c926143c7fa2f6768
+    uri: https://site-api.datocms.com/job-results/2a6e95e6148a07ec3323c385
     body:
       encoding: US-ASCII
       string: ''
@@ -40227,18 +40053,18 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
   response:
     status:
-      code: 200
-      message: OK
+      code: 404
+      message: Not Found
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:53:58 GMT
+      - Sat, 29 Aug 2026 23:28:09 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -40246,15 +40072,13 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc2f92da3f658-LHR
+      - a32f549aad053b56-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
       - "*"
       Cache-Control:
-      - max-age=0, private, must-revalidate
-      Etag:
-      - W/"70a7108ad82bf2692a02d7c34f100372"
+      - no-cache
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -40291,19 +40115,108 @@ http_interactions:
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
-      - '58'
+      - '59'
       X-Request-Id:
-      - cdce3e54-5b30-4649-b805-92efc8fc031c
+      - bb566b59-cf0f-4885-8fe5-855db5858205
       X-Runtime:
-      - '0.011787'
+      - '0.011149'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"a3ad8e4c926143c7fa2f6768","type":"job_result","attributes":{"payload":{"data":{"id":"PgTzPl6NTdyGkpMSCtgVfA","type":"upload","attributes":{"size":119271,"width":2553,"height":621,"path":"/229039/1788029633-1549027974-logo.png","format":"png","author":null,"notes":null,"copyright":null,"default_field_metadata":{"alt":{"en":"My
+      string: '{"data":[{"id":"302048","type":"api_error","attributes":{"code":"NOT_FOUND","details":{},"doc_url":"https://www.datocms.com/docs/content-management-api/errors#NOT_FOUND"}}]}'
+  recorded_at: Sat, 29 Aug 2026 23:28:09 GMT
+- request:
+    method: get
+    uri: https://site-api.datocms.com/job-results/2a6e95e6148a07ec3323c385
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <DATOCMS_TOKEN>
+      User-Agent:
+      - ruby-client v0.8.4
+      X-Api-Version:
+      - '3'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 29 Aug 2026 23:28:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - a32f54a1584179b6-LHR
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"b1672901bf142cfd3ddee582e9731f39"
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Vary:
+      - Accept,Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - authorization, content-type, user-agent, x-api-version, x-base-editing-url,
+        x-cache-tags, x-datocms-trace, x-environment, x-exclude-invalid, x-include-drafts,
+        x-organization, x-session-id, x-site-domain, x-visual-editing
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - x-cache-tags, x-complexity, x-entities, x-max-complexity, x-ratelimit-limit,
+        x-ratelimit-remaining, x-ratelimit-reset
+      Access-Control-Max-Age:
+      - '1728000'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Api-Version:
+      - '3'
+      X-Content-Type-Options:
+      - nosniff
+      X-Environment:
+      - main
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Queue-Time:
+      - 1ms
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '58'
+      X-Request-Id:
+      - 36dc1483-33de-4f9e-a490-0a1ae5524360
+      X-Runtime:
+      - '0.011720'
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"2a6e95e6148a07ec3323c385","type":"job_result","attributes":{"payload":{"data":{"id":"dPBDVGgfRV6s-i_434XSxw","type":"upload","attributes":{"size":119271,"width":2553,"height":621,"path":"/229047/1788046086-1549027974-logo.png","format":"png","author":null,"notes":null,"copyright":null,"default_field_metadata":{"alt":{"en":"My
         first post","it":"Il mio primo post"},"title":{"en":"First post","it":"Primo
-        post"},"custom_data":{"en":{},"it":{}},"focal_point":{"x":0.1,"y":0.1},"poster_time":null},"is_image":true,"created_at":"2026-08-29T18:53:57.921Z","updated_at":"2026-08-29T18:53:57.926Z","url":"https://www.datocms-assets.com/229039/1788029633-1549027974-logo.png","tags":[],"filename":"1549027974-logo.png","basename":"1549027974-logo","exif_info":{},"mime_type":"image/png","colors":[{"red":14,"green":107,"blue":139,"alpha":255},{"red":171,"green":203,"blue":215,"alpha":255},{"red":12,"green":106,"blue":138,"alpha":255},{"red":82,"green":149,"blue":172,"alpha":255},{"red":162,"green":198,"blue":210,"alpha":255}],"smart_tags":["logo"],"duration":null,"frame_rate":null,"mux_playback_id":null,"blurhash":"LcRD1WR+Iot7~qWBWBa}?aofj[oL","thumbhash":"2WWBAYAS3nqIiAXfd/V9V6tpiIhgd5c=","mux_mp4_highest_res":null,"md5":"789dc068e8ef24a6a2d93847ec259d6d"},"relationships":{"creator":{"data":{"id":"151463","type":"account"}},"upload_collection":{"data":null}},"meta":{"antivirus":{"status":"pending","checked_at":null,"threat_name":null}}}},"status":201,"statusText":"Created"}}}'
-  recorded_at: Sat, 29 Aug 2026 18:53:57 GMT
+        post"},"custom_data":{"en":{},"it":{}},"focal_point":{"x":0.1,"y":0.1},"poster_time":null},"is_image":true,"created_at":"2026-08-29T23:28:10.388Z","updated_at":"2026-08-29T23:28:10.391Z","url":"https://www.datocms-assets.com/229047/1788046086-1549027974-logo.png","tags":[],"filename":"1549027974-logo.png","basename":"1549027974-logo","exif_info":{},"mime_type":"image/png","colors":[{"red":14,"green":107,"blue":139,"alpha":255},{"red":171,"green":203,"blue":215,"alpha":255},{"red":12,"green":106,"blue":138,"alpha":255},{"red":82,"green":149,"blue":172,"alpha":255},{"red":162,"green":198,"blue":210,"alpha":255}],"smart_tags":["logo"],"duration":null,"frame_rate":null,"mux_playback_id":null,"blurhash":"LcRD1WR+Iot7~qWBWBa}?aofj[oL","thumbhash":"2WWBAYAS3nqIiAXfd/V9V6tpiIhgd5c=","mux_mp4_highest_res":null,"md5":"789dc068e8ef24a6a2d93847ec259d6d"},"relationships":{"creator":{"data":{"id":"151463","type":"account"}},"upload_collection":{"data":null}},"meta":{"antivirus":{"status":"pending","checked_at":null,"threat_name":null}}}},"status":201,"statusText":"Created"}}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:10 GMT
 - request:
     method: post
     uri: https://site-api.datocms.com/item-types
@@ -40318,7 +40231,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -40329,7 +40242,7 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:53:58 GMT
+      - Sat, 29 Aug 2026 23:28:10 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -40337,7 +40250,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc2f9aea28cce-LHR
+      - a32f54a1c960b49d-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -40345,7 +40258,7 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"7ee2d3f19d76b5c5e2eac19dce13f57c"
+      - W/"e34e19572ca0de4074f6dda4058a7d02"
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -40384,15 +40297,15 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '57'
       X-Request-Id:
-      - 8398b2f2-d605-49a6-bf7b-730c2db1ed10
+      - 13c71190-f36d-438e-8dec-4f4fab5532ab
       X-Runtime:
-      - '0.044196'
+      - '0.046030'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"a2gxSskdSo2ygyNDVsKtHA","type":"item_type","attributes":{"name":"Block","singleton":false,"sortable":false,"api_key":"block","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":true,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":null},"presentation_image_field":{"data":null},"title_field":{"data":null},"image_preview_field":{"data":null},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}}'
-  recorded_at: Sat, 29 Aug 2026 18:53:57 GMT
+      string: '{"data":{"id":"EAQlzoQ2QUaHofIejHzxaQ","type":"item_type","attributes":{"name":"Block","singleton":false,"sortable":false,"api_key":"block","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":true,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":null},"presentation_image_field":{"data":null},"title_field":{"data":null},"image_preview_field":{"data":null},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:10 GMT
 - request:
     method: post
     uri: https://site-api.datocms.com/item-types
@@ -40407,7 +40320,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -40418,7 +40331,7 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:53:58 GMT
+      - Sat, 29 Aug 2026 23:28:10 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -40426,7 +40339,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc2fa7d94243d-LHR
+      - a32f54a269cd9a6a-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -40434,448 +40347,7 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"6550e34b0e9b8bdfec5a74e0c65696f0"
-      Server:
-      - cloudflare
-      Strict-Transport-Security:
-      - max-age=15552000; includeSubDomains; preload
-      Vary:
-      - Accept,Accept-Encoding
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - authorization, content-type, user-agent, x-api-version, x-base-editing-url,
-        x-cache-tags, x-datocms-trace, x-environment, x-exclude-invalid, x-include-drafts,
-        x-organization, x-session-id, x-site-domain, x-visual-editing
-      Access-Control-Allow-Methods:
-      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
-      Access-Control-Expose-Headers:
-      - x-cache-tags, x-complexity, x-entities, x-max-complexity, x-ratelimit-limit,
-        x-ratelimit-remaining, x-ratelimit-reset
-      Access-Control-Max-Age:
-      - '1728000'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      X-Api-Version:
-      - '3'
-      X-Content-Type-Options:
-      - nosniff
-      X-Environment:
-      - main
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      X-Queue-Time:
-      - 0ms
-      X-Ratelimit-Limit:
-      - '60'
-      X-Ratelimit-Remaining:
-      - '56'
-      X-Request-Id:
-      - cb00ad15-563d-47eb-a500-65e07ca6f66b
-      X-Runtime:
-      - '0.043207'
-      X-Xss-Protection:
-      - '0'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"WtkZKwdKQAKPTNHyYDKSHQ","type":"item_type","attributes":{"name":"Author","singleton":false,"sortable":false,"api_key":"author","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":null},"presentation_image_field":{"data":null},"title_field":{"data":null},"image_preview_field":{"data":null},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}}'
-  recorded_at: Sat, 29 Aug 2026 18:53:57 GMT
-- request:
-    method: post
-    uri: https://site-api.datocms.com/item-types/B6ryW4ClS7SOuN-aws3-Fg/fields
-    body:
-      encoding: UTF-8
-      string: '{"data":{"type":"field","attributes":{"label":"Content","field_type":"structured_text","api_key":"content","localized":false,"validators":{"structured_text_blocks":{"item_types":["a2gxSskdSo2ygyNDVsKtHA"]},"structured_text_links":{"item_types":["WtkZKwdKQAKPTNHyYDKSHQ"]}},"hint":""}}}'
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json
-      Authorization:
-      - Bearer <DATOCMS_TOKEN>
-      User-Agent:
-      - ruby-client v0.8.3
-      X-Api-Version:
-      - '3'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 202
-      message: Accepted
-    headers:
-      Date:
-      - Sat, 29 Aug 2026 18:53:58 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Cf-Ray:
-      - a32dc2fb3984f578-LHR
-      Cf-Cache-Status:
-      - DYNAMIC
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - no-cache
-      Server:
-      - cloudflare
-      Strict-Transport-Security:
-      - max-age=15552000; includeSubDomains; preload
-      Vary:
-      - Accept,Accept-Encoding
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - authorization, content-type, user-agent, x-api-version, x-base-editing-url,
-        x-cache-tags, x-datocms-trace, x-environment, x-exclude-invalid, x-include-drafts,
-        x-organization, x-session-id, x-site-domain, x-visual-editing
-      Access-Control-Allow-Methods:
-      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
-      Access-Control-Expose-Headers:
-      - x-cache-tags, x-complexity, x-entities, x-max-complexity, x-ratelimit-limit,
-        x-ratelimit-remaining, x-ratelimit-reset
-      Access-Control-Max-Age:
-      - '1728000'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      X-Api-Version:
-      - '3'
-      X-Content-Type-Options:
-      - nosniff
-      X-Environment:
-      - main
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      X-Queue-Time:
-      - 1ms
-      X-Ratelimit-Limit:
-      - '60'
-      X-Ratelimit-Remaining:
-      - '55'
-      X-Request-Id:
-      - 0b741482-b6eb-4bd2-9896-cae02012a22f
-      X-Runtime:
-      - '0.017570'
-      X-Xss-Protection:
-      - '0'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"31de0afa7b484eef15989ef6","type":"job"}}'
-  recorded_at: Sat, 29 Aug 2026 18:53:57 GMT
-- request:
-    method: get
-    uri: https://site-api.datocms.com/job-results/31de0afa7b484eef15989ef6
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json
-      Authorization:
-      - Bearer <DATOCMS_TOKEN>
-      User-Agent:
-      - ruby-client v0.8.3
-      X-Api-Version:
-      - '3'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Sat, 29 Aug 2026 18:54:00 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Cf-Ray:
-      - a32dc3021a3f93f9-LHR
-      Cf-Cache-Status:
-      - DYNAMIC
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Etag:
-      - W/"8da8e0a6ed86f3d104eb614b3fd72f43"
-      Server:
-      - cloudflare
-      Strict-Transport-Security:
-      - max-age=15552000; includeSubDomains; preload
-      Vary:
-      - Accept,Accept-Encoding
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - authorization, content-type, user-agent, x-api-version, x-base-editing-url,
-        x-cache-tags, x-datocms-trace, x-environment, x-exclude-invalid, x-include-drafts,
-        x-organization, x-session-id, x-site-domain, x-visual-editing
-      Access-Control-Allow-Methods:
-      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
-      Access-Control-Expose-Headers:
-      - x-cache-tags, x-complexity, x-entities, x-max-complexity, x-ratelimit-limit,
-        x-ratelimit-remaining, x-ratelimit-reset
-      Access-Control-Max-Age:
-      - '1728000'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      X-Api-Version:
-      - '3'
-      X-Content-Type-Options:
-      - nosniff
-      X-Environment:
-      - main
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      X-Queue-Time:
-      - 0ms
-      X-Ratelimit-Limit:
-      - '60'
-      X-Ratelimit-Remaining:
-      - '59'
-      X-Request-Id:
-      - 1064f307-2443-4adc-81f9-70c8d5a1293f
-      X-Runtime:
-      - '0.015930'
-      X-Xss-Protection:
-      - '0'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"31de0afa7b484eef15989ef6","type":"job_result","attributes":{"payload":{"data":{"id":"VDGetnwmQ2a98uLxlZ86rg","type":"field","attributes":{"label":"Content","field_type":"structured_text","api_key":"content","hint":null,"localized":false,"validators":{"structured_text_blocks":{"item_types":["a2gxSskdSo2ygyNDVsKtHA"]},"structured_text_links":{"on_publish_with_unpublished_references_strategy":"fail","on_reference_unpublish_strategy":"delete_references","on_reference_delete_strategy":"delete_references","item_types":["WtkZKwdKQAKPTNHyYDKSHQ"]}},"position":4,"appearance":{"editor":"structured_text","parameters":{"blocks_start_collapsed":false,"show_links_target_blank":true,"show_links_meta_editor":false,"nodes":["blockquote","code","heading","link","list","thematicBreak","inlineItem","itemLink"],"marks":["strong","emphasis","underline","strikethrough","code","highlight"],"heading_levels":[1,2,3,4,5,6]},"addons":[]},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"B6ryW4ClS7SOuN-aws3-Fg","type":"item_type"}},"fieldset":{"data":null}}},"included":[{"id":"B6ryW4ClS7SOuN-aws3-Fg","type":"item_type","attributes":{"name":"Article","singleton":false,"sortable":false,"api_key":"article","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"},{"id":"ARiQqNdvSg-px6BuOYe8Wg","type":"field"},{"id":"HR1QY6qCTaaB-huf10UM7w","type":"field"},{"id":"VDGetnwmQ2a98uLxlZ86rg","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"}},"presentation_image_field":{"data":{"id":"HR1QY6qCTaaB-huf10UM7w","type":"field"}},"title_field":{"data":{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"}},"image_preview_field":{"data":{"id":"HR1QY6qCTaaB-huf10UM7w","type":"field"}},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}]},"status":201,"statusText":"Created"}}}'
-  recorded_at: Sat, 29 Aug 2026 18:53:58 GMT
-- request:
-    method: post
-    uri: https://site-api.datocms.com/item-types/WtkZKwdKQAKPTNHyYDKSHQ/fields
-    body:
-      encoding: UTF-8
-      string: '{"data":{"type":"field","attributes":{"label":"Name","field_type":"string","api_key":"name","localized":false,"validators":{"required":{}},"hint":""}}}'
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json
-      Authorization:
-      - Bearer <DATOCMS_TOKEN>
-      User-Agent:
-      - ruby-client v0.8.3
-      X-Api-Version:
-      - '3'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 202
-      message: Accepted
-    headers:
-      Date:
-      - Sat, 29 Aug 2026 18:54:00 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Cf-Ray:
-      - a32dc302bc87e5af-LHR
-      Cf-Cache-Status:
-      - DYNAMIC
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - no-cache
-      Server:
-      - cloudflare
-      Strict-Transport-Security:
-      - max-age=15552000; includeSubDomains; preload
-      Vary:
-      - Accept,Accept-Encoding
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - authorization, content-type, user-agent, x-api-version, x-base-editing-url,
-        x-cache-tags, x-datocms-trace, x-environment, x-exclude-invalid, x-include-drafts,
-        x-organization, x-session-id, x-site-domain, x-visual-editing
-      Access-Control-Allow-Methods:
-      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
-      Access-Control-Expose-Headers:
-      - x-cache-tags, x-complexity, x-entities, x-max-complexity, x-ratelimit-limit,
-        x-ratelimit-remaining, x-ratelimit-reset
-      Access-Control-Max-Age:
-      - '1728000'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      X-Api-Version:
-      - '3'
-      X-Content-Type-Options:
-      - nosniff
-      X-Environment:
-      - main
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      X-Queue-Time:
-      - 0ms
-      X-Ratelimit-Limit:
-      - '60'
-      X-Ratelimit-Remaining:
-      - '58'
-      X-Request-Id:
-      - 1ee5da91-0202-4219-8623-306296abfd88
-      X-Runtime:
-      - '0.020204'
-      X-Xss-Protection:
-      - '0'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"80da797b047f020c2e142def","type":"job"}}'
-  recorded_at: Sat, 29 Aug 2026 18:53:58 GMT
-- request:
-    method: get
-    uri: https://site-api.datocms.com/job-results/80da797b047f020c2e142def
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json
-      Authorization:
-      - Bearer <DATOCMS_TOKEN>
-      User-Agent:
-      - ruby-client v0.8.3
-      X-Api-Version:
-      - '3'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Sat, 29 Aug 2026 18:54:01 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Cf-Ray:
-      - a32dc3099eeb7692-LHR
-      Cf-Cache-Status:
-      - DYNAMIC
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Etag:
-      - W/"34f279f3efa035d7b9738f7c7624a3e4"
-      Server:
-      - cloudflare
-      Strict-Transport-Security:
-      - max-age=15552000; includeSubDomains; preload
-      Vary:
-      - Accept,Accept-Encoding
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - authorization, content-type, user-agent, x-api-version, x-base-editing-url,
-        x-cache-tags, x-datocms-trace, x-environment, x-exclude-invalid, x-include-drafts,
-        x-organization, x-session-id, x-site-domain, x-visual-editing
-      Access-Control-Allow-Methods:
-      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
-      Access-Control-Expose-Headers:
-      - x-cache-tags, x-complexity, x-entities, x-max-complexity, x-ratelimit-limit,
-        x-ratelimit-remaining, x-ratelimit-reset
-      Access-Control-Max-Age:
-      - '1728000'
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      X-Api-Version:
-      - '3'
-      X-Content-Type-Options:
-      - nosniff
-      X-Environment:
-      - main
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      X-Queue-Time:
-      - 1ms
-      X-Ratelimit-Limit:
-      - '60'
-      X-Ratelimit-Remaining:
-      - '57'
-      X-Request-Id:
-      - e6a7045b-3126-4297-bdcd-8f4684640918
-      X-Runtime:
-      - '0.012251'
-      X-Xss-Protection:
-      - '0'
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"80da797b047f020c2e142def","type":"job_result","attributes":{"payload":{"data":{"id":"CgD-CJ5WTwu8XG4roWoWRw","type":"field","attributes":{"label":"Name","field_type":"string","api_key":"name","hint":null,"localized":false,"validators":{"required":{}},"position":1,"appearance":{"editor":"single_line","parameters":{"heading":false,"placeholder":null},"addons":[]},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"WtkZKwdKQAKPTNHyYDKSHQ","type":"item_type"}},"fieldset":{"data":null}}},"included":[{"id":"WtkZKwdKQAKPTNHyYDKSHQ","type":"item_type","attributes":{"name":"Author","singleton":false,"sortable":false,"api_key":"author","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"CgD-CJ5WTwu8XG4roWoWRw","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"CgD-CJ5WTwu8XG4roWoWRw","type":"field"}},"presentation_image_field":{"data":null},"title_field":{"data":{"id":"CgD-CJ5WTwu8XG4roWoWRw","type":"field"}},"image_preview_field":{"data":null},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}]},"status":201,"statusText":"Created"}}}'
-  recorded_at: Sat, 29 Aug 2026 18:53:59 GMT
-- request:
-    method: post
-    uri: https://site-api.datocms.com/items
-    body:
-      encoding: UTF-8
-      string: '{"data":{"type":"item","attributes":{"name":"Mark Smith"},"relationships":{"item_type":{"data":{"type":"item_type","id":"WtkZKwdKQAKPTNHyYDKSHQ"}}}}}'
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json
-      Authorization:
-      - Bearer <DATOCMS_TOKEN>
-      User-Agent:
-      - ruby-client v0.8.3
-      X-Api-Version:
-      - '3'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 201
-      message: Created
-    headers:
-      Date:
-      - Sat, 29 Aug 2026 18:54:01 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Cf-Ray:
-      - a32dc30a39650ab8-LHR
-      Cf-Cache-Status:
-      - DYNAMIC
-      Access-Control-Allow-Origin:
-      - "*"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Etag:
-      - W/"010c1607f5d4cc6c86a2bb126f50a3c6"
+      - W/"eeb045a58d916b5eedc807a5055d1d28"
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -40914,22 +40386,21 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '56'
       X-Request-Id:
-      - 1449a3d4-a02b-41b9-9a49-a38ceda1660e
+      - 474fd518-0ac9-4ce6-a189-3369f458638f
       X-Runtime:
-      - '0.064343'
+      - '0.045209'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"RGRKH1q_TAeVgfZv2x3ylw","type":"item","attributes":{"name":"Mark
-        Smith"},"relationships":{"item_type":{"data":{"id":"WtkZKwdKQAKPTNHyYDKSHQ","type":"item_type"}},"creator":{"data":{"id":"151463","type":"account"}}},"meta":{"created_at":"2026-08-29T19:54:01.351+01:00","updated_at":"2026-08-29T19:54:01.354+01:00","published_at":"2026-08-29T19:54:01.364+01:00","publication_scheduled_at":null,"unpublishing_scheduled_at":null,"first_published_at":"2026-08-29T19:54:01.364+01:00","is_valid":true,"is_current_version_valid":true,"is_published_version_valid":true,"has_children":null,"status":"published","current_version":"S1GRzdhcRHG2_KX90TwuJw","stage":null}},"included":[{"id":"WtkZKwdKQAKPTNHyYDKSHQ","type":"item_type","attributes":{"name":"Author","singleton":false,"sortable":false,"api_key":"author","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"CgD-CJ5WTwu8XG4roWoWRw","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"CgD-CJ5WTwu8XG4roWoWRw","type":"field"}},"presentation_image_field":{"data":null},"title_field":{"data":{"id":"CgD-CJ5WTwu8XG4roWoWRw","type":"field"}},"image_preview_field":{"data":null},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}]}'
-  recorded_at: Sat, 29 Aug 2026 18:54:00 GMT
+      string: '{"data":{"id":"bz08Ax43QgmucxhEfaeWGA","type":"item_type","attributes":{"name":"Author","singleton":false,"sortable":false,"api_key":"author","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":null},"presentation_image_field":{"data":null},"title_field":{"data":null},"image_preview_field":{"data":null},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:10 GMT
 - request:
     method: post
-    uri: https://site-api.datocms.com/item-types/a2gxSskdSo2ygyNDVsKtHA/fields
+    uri: https://site-api.datocms.com/item-types/U8LYMqufSqiL5HG1TH08gg/fields
     body:
       encoding: UTF-8
-      string: '{"data":{"type":"field","attributes":{"label":"Title","field_type":"string","api_key":"title","localized":false,"validators":{"required":{}},"hint":""}}}'
+      string: '{"data":{"type":"field","attributes":{"label":"Content","field_type":"structured_text","api_key":"content","localized":false,"validators":{"structured_text_blocks":{"item_types":["EAQlzoQ2QUaHofIejHzxaQ"]},"structured_text_links":{"item_types":["bz08Ax43QgmucxhEfaeWGA"]}},"hint":""}}}'
     headers:
       Accept:
       - application/json
@@ -40938,7 +40409,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -40949,7 +40420,7 @@ http_interactions:
       message: Accepted
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:54:01 GMT
+      - Sat, 29 Aug 2026 23:28:10 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -40957,7 +40428,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc30b1b3f3784-LHR
+      - a32f54a30a237f0d-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -40996,24 +40467,24 @@ http_interactions:
       X-Permitted-Cross-Domain-Policies:
       - none
       X-Queue-Time:
-      - 1ms
+      - 0ms
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
       - '55'
       X-Request-Id:
-      - b79b61d5-cf04-4e23-86d1-5eaa47ef7413
+      - c97c762b-447e-46dc-8fc1-ecb2491acdd2
       X-Runtime:
-      - '0.016070'
+      - '0.015604'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"662dd9014960c8cdb1d0aa83","type":"job"}}'
-  recorded_at: Sat, 29 Aug 2026 18:54:00 GMT
+      string: '{"data":{"id":"06b2cf06de556e88dabd048b","type":"job"}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:10 GMT
 - request:
     method: get
-    uri: https://site-api.datocms.com/job-results/662dd9014960c8cdb1d0aa83
+    uri: https://site-api.datocms.com/job-results/06b2cf06de556e88dabd048b
     body:
       encoding: US-ASCII
       string: ''
@@ -41025,7 +40496,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -41036,7 +40507,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:54:02 GMT
+      - Sat, 29 Aug 2026 23:28:11 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -41044,7 +40515,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc311ff0163c1-LHR
+      - a32f54a9cba8af90-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -41052,7 +40523,7 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"55a0f39f5db2f53f129f619f0a2df533"
+      - W/"96615a34026ab181674b64dfff00c5ab"
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -41091,21 +40562,21 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '54'
       X-Request-Id:
-      - c199e2da-5071-4bf5-a74d-a9ef1c417fd8
+      - 0a0b45d2-3b3c-4baf-8d41-38e88f695ac5
       X-Runtime:
-      - '0.012232'
+      - '0.011246'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"662dd9014960c8cdb1d0aa83","type":"job_result","attributes":{"payload":{"data":{"id":"URUZXofOSlGYxZcjqoHbqA","type":"field","attributes":{"label":"Title","field_type":"string","api_key":"title","hint":null,"localized":false,"validators":{"required":{}},"position":1,"appearance":{"editor":"single_line","parameters":{"heading":false,"placeholder":null},"addons":[]},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"a2gxSskdSo2ygyNDVsKtHA","type":"item_type"}},"fieldset":{"data":null}}},"included":[{"id":"a2gxSskdSo2ygyNDVsKtHA","type":"item_type","attributes":{"name":"Block","singleton":false,"sortable":false,"api_key":"block","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":true,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"URUZXofOSlGYxZcjqoHbqA","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"URUZXofOSlGYxZcjqoHbqA","type":"field"}},"presentation_image_field":{"data":null},"title_field":{"data":null},"image_preview_field":{"data":null},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}]},"status":201,"statusText":"Created"}}}'
-  recorded_at: Sat, 29 Aug 2026 18:54:01 GMT
+      string: '{"data":{"id":"06b2cf06de556e88dabd048b","type":"job_result","attributes":{"payload":{"data":{"id":"PKW1nVCTQZWSbEE_yAzJeQ","type":"field","attributes":{"label":"Content","field_type":"structured_text","api_key":"content","hint":null,"localized":false,"validators":{"structured_text_blocks":{"item_types":["EAQlzoQ2QUaHofIejHzxaQ"]},"structured_text_links":{"on_publish_with_unpublished_references_strategy":"fail","on_reference_unpublish_strategy":"delete_references","on_reference_delete_strategy":"delete_references","item_types":["bz08Ax43QgmucxhEfaeWGA"]}},"position":4,"appearance":{"editor":"structured_text","parameters":{"blocks_start_collapsed":false,"show_links_target_blank":true,"show_links_meta_editor":false,"nodes":["blockquote","code","heading","link","list","thematicBreak","inlineItem","itemLink"],"marks":["strong","emphasis","underline","strikethrough","code","highlight"],"heading_levels":[1,2,3,4,5,6]},"addons":[]},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"U8LYMqufSqiL5HG1TH08gg","type":"item_type"}},"fieldset":{"data":null}}},"included":[{"id":"U8LYMqufSqiL5HG1TH08gg","type":"item_type","attributes":{"name":"Article","singleton":false,"sortable":false,"api_key":"article","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"},{"id":"WTGKMTVASXuMYjqtVtYaDw","type":"field"},{"id":"BOdQVEsOQiilsXb9QB7yYw","type":"field"},{"id":"PKW1nVCTQZWSbEE_yAzJeQ","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"}},"presentation_image_field":{"data":{"id":"BOdQVEsOQiilsXb9QB7yYw","type":"field"}},"title_field":{"data":{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"}},"image_preview_field":{"data":{"id":"BOdQVEsOQiilsXb9QB7yYw","type":"field"}},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}]},"status":201,"statusText":"Created"}}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:11 GMT
 - request:
     method: post
-    uri: https://site-api.datocms.com/item-types/B6ryW4ClS7SOuN-aws3-Fg/fields
+    uri: https://site-api.datocms.com/item-types/bz08Ax43QgmucxhEfaeWGA/fields
     body:
       encoding: UTF-8
-      string: '{"data":{"type":"field","attributes":{"label":"File","field_type":"file","api_key":"file","localized":false,"validators":{"required":{}},"hint":""}}}'
+      string: '{"data":{"type":"field","attributes":{"label":"Name","field_type":"string","api_key":"name","localized":false,"validators":{"required":{}},"hint":""}}}'
     headers:
       Accept:
       - application/json
@@ -41114,7 +40585,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -41125,7 +40596,7 @@ http_interactions:
       message: Accepted
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:54:02 GMT
+      - Sat, 29 Aug 2026 23:28:11 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -41133,7 +40604,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc312a9266539-LHR
+      - a32f54aa2e35496e-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -41178,18 +40649,18 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '53'
       X-Request-Id:
-      - 9ec1a53c-3a62-468d-acdc-f52f1200a519
+      - f857f96d-719a-42c3-ba6d-de9767662cd2
       X-Runtime:
-      - '0.016228'
+      - '0.017174'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"15137c593f8b249f4aa49f8a","type":"job"}}'
-  recorded_at: Sat, 29 Aug 2026 18:54:01 GMT
+      string: '{"data":{"id":"a76ac5ff6f9ebd2b8be7f3bd","type":"job"}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:11 GMT
 - request:
     method: get
-    uri: https://site-api.datocms.com/job-results/15137c593f8b249f4aa49f8a
+    uri: https://site-api.datocms.com/job-results/a76ac5ff6f9ebd2b8be7f3bd
     body:
       encoding: US-ASCII
       string: ''
@@ -41201,7 +40672,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -41212,7 +40683,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:54:03 GMT
+      - Sat, 29 Aug 2026 23:28:12 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -41220,7 +40691,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc3198f6b26f7-LHR
+      - a32f54b0ee250019-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -41228,7 +40699,7 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"5b714ff607b2611091579a337107147f"
+      - W/"764ed80eb587caf5103d429e5c928945"
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -41261,27 +40732,27 @@ http_interactions:
       X-Permitted-Cross-Domain-Policies:
       - none
       X-Queue-Time:
-      - 1ms
+      - 0ms
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
       - '59'
       X-Request-Id:
-      - 82f2b45e-a4eb-4a54-b1da-5ee8e2e6ec2f
+      - e5fa2a73-d9ec-487e-8615-e4936e67f2af
       X-Runtime:
-      - '0.011687'
+      - '0.011565'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"15137c593f8b249f4aa49f8a","type":"job_result","attributes":{"payload":{"data":{"id":"UFlPKdiyT2qFnVC1AyI0bg","type":"field","attributes":{"label":"File","field_type":"file","api_key":"file","hint":null,"localized":false,"validators":{"required":{}},"position":5,"appearance":{"editor":"file","parameters":{},"addons":[]},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"B6ryW4ClS7SOuN-aws3-Fg","type":"item_type"}},"fieldset":{"data":null}}},"included":[{"id":"B6ryW4ClS7SOuN-aws3-Fg","type":"item_type","attributes":{"name":"Article","singleton":false,"sortable":false,"api_key":"article","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"},{"id":"ARiQqNdvSg-px6BuOYe8Wg","type":"field"},{"id":"HR1QY6qCTaaB-huf10UM7w","type":"field"},{"id":"VDGetnwmQ2a98uLxlZ86rg","type":"field"},{"id":"UFlPKdiyT2qFnVC1AyI0bg","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"}},"presentation_image_field":{"data":{"id":"HR1QY6qCTaaB-huf10UM7w","type":"field"}},"title_field":{"data":{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"}},"image_preview_field":{"data":{"id":"HR1QY6qCTaaB-huf10UM7w","type":"field"}},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}]},"status":201,"statusText":"Created"}}}'
-  recorded_at: Sat, 29 Aug 2026 18:54:02 GMT
+      string: '{"data":{"id":"a76ac5ff6f9ebd2b8be7f3bd","type":"job_result","attributes":{"payload":{"data":{"id":"dMxU4aYbQ3WpwMK9oMXOlA","type":"field","attributes":{"label":"Name","field_type":"string","api_key":"name","hint":null,"localized":false,"validators":{"required":{}},"position":1,"appearance":{"editor":"single_line","parameters":{"heading":false,"placeholder":null},"addons":[]},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"bz08Ax43QgmucxhEfaeWGA","type":"item_type"}},"fieldset":{"data":null}}},"included":[{"id":"bz08Ax43QgmucxhEfaeWGA","type":"item_type","attributes":{"name":"Author","singleton":false,"sortable":false,"api_key":"author","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"dMxU4aYbQ3WpwMK9oMXOlA","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"dMxU4aYbQ3WpwMK9oMXOlA","type":"field"}},"presentation_image_field":{"data":null},"title_field":{"data":{"id":"dMxU4aYbQ3WpwMK9oMXOlA","type":"field"}},"image_preview_field":{"data":null},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}]},"status":201,"statusText":"Created"}}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:12 GMT
 - request:
     method: post
-    uri: https://site-api.datocms.com/upload-requests
+    uri: https://site-api.datocms.com/items
     body:
       encoding: UTF-8
-      string: '{"data":{"type":"upload_request","attributes":{"filename":"file.txt"}}}'
+      string: '{"data":{"type":"item","attributes":{"name":"Mark Smith"},"relationships":{"item_type":{"data":{"type":"item_type","id":"bz08Ax43QgmucxhEfaeWGA"}}}}}'
     headers:
       Accept:
       - application/json
@@ -41290,7 +40761,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -41301,7 +40772,7 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:54:03 GMT
+      - Sat, 29 Aug 2026 23:28:13 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -41309,7 +40780,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc31a0f333840-LHR
+      - a32f54b159714a6e-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -41317,7 +40788,7 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"f2141d67b1b9a08e7d308bbc0d356749"
+      - W/"95146276ef4866837be0875b543882c1"
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -41350,73 +40821,28 @@ http_interactions:
       X-Permitted-Cross-Domain-Policies:
       - none
       X-Queue-Time:
-      - 1ms
+      - 0ms
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
       - '58'
       X-Request-Id:
-      - f6143101-801d-4248-b1eb-c94159310247
+      - 9224e78b-31de-4aa4-853b-0d9568e8c2ac
       X-Runtime:
-      - '0.014842'
+      - '0.075709'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"/229039/1788029643-file.txt","type":"upload_request","attributes":{"url":"https://datocms-assets.6c36efb897e5eae1d2a887cfa632eea9.eu.r2.cloudflarestorage.com/229039/1788029643-file.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=43952c4b5f6e8765319bc8af0073c64c%2F20260829%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260829T185403Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=d268f24e4b27a9af08d8604b03b14935fe3aa5d1fc4808d1d7c2599b1e7c286a","request_headers":{}}}}'
-  recorded_at: Sat, 29 Aug 2026 18:54:02 GMT
-- request:
-    method: put
-    uri: https://datocms-assets.6c36efb897e5eae1d2a887cfa632eea9.eu.r2.cloudflarestorage.com/229039/1788029643-file.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=43952c4b5f6e8765319bc8af0073c64c/20260829/auto/s3/aws4_request&X-Amz-Date=20260829T185403Z&X-Amz-Expires=900&X-Amz-Signature=d268f24e4b27a9af08d8604b03b14935fe3aa5d1fc4808d1d7c2599b1e7c286a&X-Amz-SignedHeaders=host
-    body:
-      encoding: UTF-8
-      string: 'Hi there!
-
-        '
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-      Host:
-      - datocms-assets.6c36efb897e5eae1d2a887cfa632eea9.eu.r2.cloudflarestorage.com
-      Content-Type:
-      - text/plain
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Sat, 29 Aug 2026 18:54:04 GMT
-      Content-Type:
-      - text/plain;charset=UTF-8
-      Content-Length:
-      - '0'
-      Connection:
-      - keep-alive
-      Etag:
-      - '"2b87e29fca6ee7f1df6c1a76cb58e101"'
-      X-Amz-Checksum-Crc64nvme:
-      - BqiUcDWH3qE=
-      X-Amz-Version-Id:
-      - 7e5fb120d32588206f4f66a2b18121cc
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - a32dc31aaa408077-LHR
-    body:
-      encoding: UTF-8
-      string: ''
-  recorded_at: Sat, 29 Aug 2026 18:54:02 GMT
+      string: '{"data":{"id":"RgBPgxIHS4GttmMF_fy4cg","type":"item","attributes":{"name":"Mark
+        Smith"},"relationships":{"item_type":{"data":{"id":"bz08Ax43QgmucxhEfaeWGA","type":"item_type"}},"creator":{"data":{"id":"151463","type":"account"}}},"meta":{"created_at":"2026-08-30T00:28:13.053+01:00","updated_at":"2026-08-30T00:28:13.056+01:00","published_at":"2026-08-30T00:28:13.071+01:00","publication_scheduled_at":null,"unpublishing_scheduled_at":null,"first_published_at":"2026-08-30T00:28:13.071+01:00","is_valid":true,"is_current_version_valid":true,"is_published_version_valid":true,"has_children":null,"status":"published","current_version":"TZEiS1rgRuGDm9G8mY64Eg","stage":null}},"included":[{"id":"bz08Ax43QgmucxhEfaeWGA","type":"item_type","attributes":{"name":"Author","singleton":false,"sortable":false,"api_key":"author","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"dMxU4aYbQ3WpwMK9oMXOlA","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"dMxU4aYbQ3WpwMK9oMXOlA","type":"field"}},"presentation_image_field":{"data":null},"title_field":{"data":{"id":"dMxU4aYbQ3WpwMK9oMXOlA","type":"field"}},"image_preview_field":{"data":null},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}]}'
+  recorded_at: Sat, 29 Aug 2026 23:28:13 GMT
 - request:
     method: post
-    uri: https://site-api.datocms.com/uploads
+    uri: https://site-api.datocms.com/item-types/EAQlzoQ2QUaHofIejHzxaQ/fields
     body:
       encoding: UTF-8
-      string: '{"data":{"type":"upload","attributes":{"path":"/229039/1788029643-file.txt"}}}'
+      string: '{"data":{"type":"field","attributes":{"label":"Title","field_type":"string","api_key":"title","localized":false,"validators":{"required":{}},"hint":""}}}'
     headers:
       Accept:
       - application/json
@@ -41425,7 +40851,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -41436,7 +40862,7 @@ http_interactions:
       message: Accepted
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:54:04 GMT
+      - Sat, 29 Aug 2026 23:28:13 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -41444,7 +40870,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc31c5df0582e-LHR
+      - a32f54b22c236517-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -41483,24 +40909,24 @@ http_interactions:
       X-Permitted-Cross-Domain-Policies:
       - none
       X-Queue-Time:
-      - 0ms
+      - 1ms
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
       - '57'
       X-Request-Id:
-      - 6ce38670-b1b4-4041-aa43-d4b142375130
+      - 2e826426-56d4-40b1-84b4-2aa1629e6966
       X-Runtime:
-      - '0.016625'
+      - '0.016445'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"000ae2075076ec3b5d47ba8d","type":"job"}}'
-  recorded_at: Sat, 29 Aug 2026 18:54:02 GMT
+      string: '{"data":{"id":"0c473b8f12492f8cec1f29e7","type":"job"}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:13 GMT
 - request:
     method: get
-    uri: https://site-api.datocms.com/job-results/000ae2075076ec3b5d47ba8d
+    uri: https://site-api.datocms.com/job-results/0c473b8f12492f8cec1f29e7
     body:
       encoding: US-ASCII
       string: ''
@@ -41512,7 +40938,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -41523,7 +40949,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:54:05 GMT
+      - Sat, 29 Aug 2026 23:28:14 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -41531,7 +40957,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc3232e96d1f7-LHR
+      - a32f54b8e8b28e0d-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -41539,7 +40965,7 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"dce76940b743b600b743475d0f50681e"
+      - W/"bdb602189cfba0e6b2d1f1d65bcb0dd8"
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -41578,26 +41004,21 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '56'
       X-Request-Id:
-      - 222f210a-198c-4d31-a515-1eb9be78fb93
+      - 5671ac85-b9d3-4548-92a1-8830daa4d5ae
       X-Runtime:
-      - '0.011449'
+      - '0.011644'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"000ae2075076ec3b5d47ba8d","type":"job_result","attributes":{"payload":{"data":{"id":"FyUBjGiTTxG1OIJowji9Jw","type":"upload","attributes":{"size":10,"width":null,"height":null,"path":"/229039/1788029643-file.txt","format":"txt","author":null,"notes":null,"copyright":null,"default_field_metadata":{"alt":{"en":null,"it":null},"title":{"en":null,"it":null},"custom_data":{"en":{},"it":{}},"focal_point":null,"poster_time":null},"is_image":false,"created_at":"2026-08-29T18:54:05.168Z","updated_at":"2026-08-29T18:54:05.168Z","url":"https://www.datocms-assets.com/229039/1788029643-file.txt","tags":[],"filename":"file.txt","basename":"file","exif_info":{},"mime_type":"text/plain","colors":[],"smart_tags":[],"duration":null,"frame_rate":null,"mux_playback_id":null,"blurhash":null,"thumbhash":null,"mux_mp4_highest_res":null,"md5":"2b87e29fca6ee7f1df6c1a76cb58e101"},"relationships":{"creator":{"data":{"id":"151463","type":"account"}},"upload_collection":{"data":null}},"meta":{"antivirus":{"status":"pending","checked_at":null,"threat_name":null}}}},"status":201,"statusText":"Created"}}}'
-  recorded_at: Sat, 29 Aug 2026 18:54:03 GMT
+      string: '{"data":{"id":"0c473b8f12492f8cec1f29e7","type":"job_result","attributes":{"payload":{"data":{"id":"Wnk7X85qSqGnntT3LRymDA","type":"field","attributes":{"label":"Title","field_type":"string","api_key":"title","hint":null,"localized":false,"validators":{"required":{}},"position":1,"appearance":{"editor":"single_line","parameters":{"heading":false,"placeholder":null},"addons":[]},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"EAQlzoQ2QUaHofIejHzxaQ","type":"item_type"}},"fieldset":{"data":null}}},"included":[{"id":"EAQlzoQ2QUaHofIejHzxaQ","type":"item_type","attributes":{"name":"Block","singleton":false,"sortable":false,"api_key":"block","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":true,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"Wnk7X85qSqGnntT3LRymDA","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"Wnk7X85qSqGnntT3LRymDA","type":"field"}},"presentation_image_field":{"data":null},"title_field":{"data":null},"image_preview_field":{"data":null},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}]},"status":201,"statusText":"Created"}}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:14 GMT
 - request:
     method: post
-    uri: https://site-api.datocms.com/items
+    uri: https://site-api.datocms.com/item-types/U8LYMqufSqiL5HG1TH08gg/fields
     body:
       encoding: UTF-8
-      string: '{"data":{"type":"item","attributes":{"title":{"en":"First post","it":"Primo
-        post"},"slug":"first-post","image":{"upload_id":"PgTzPl6NTdyGkpMSCtgVfA"},"content":{"schema":"dast","document":{"type":"root","children":[{"type":"heading","level":1,"children":[{"type":"span","value":"This
-        is the title!"}]},{"type":"paragraph","children":[{"type":"span","value":"And
-        "},{"type":"span","marks":["strong"],"value":"this"},{"type":"span","value":"
-        is an "},{"type":"itemLink","item":"RGRKH1q_TAeVgfZv2x3ylw","children":[{"type":"span","value":"author"}]}]},{"type":"paragraph","children":[{"type":"inlineItem","item":"RGRKH1q_TAeVgfZv2x3ylw"}]},{"type":"block","item":{"type":"item","attributes":{"title":"Foo"},"relationships":{"item_type":{"data":{"id":"a2gxSskdSo2ygyNDVsKtHA","type":"item_type"}}}}}]}},"file":{"upload_id":"FyUBjGiTTxG1OIJowji9Jw","alt":"My
-        first file","title":"My first file","custom_data":{}}},"relationships":{"item_type":{"data":{"type":"item_type","id":"B6ryW4ClS7SOuN-aws3-Fg"}}}}}'
+      string: '{"data":{"type":"field","attributes":{"label":"File","field_type":"file","api_key":"file","localized":false,"validators":{"required":{}},"hint":""}}}'
     headers:
       Accept:
       - application/json
@@ -41606,7 +41027,183 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
+      X-Api-Version:
+      - '3'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Date:
+      - Sat, 29 Aug 2026 23:28:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - a32f54b95bb80da9-LHR
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Vary:
+      - Accept,Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - authorization, content-type, user-agent, x-api-version, x-base-editing-url,
+        x-cache-tags, x-datocms-trace, x-environment, x-exclude-invalid, x-include-drafts,
+        x-organization, x-session-id, x-site-domain, x-visual-editing
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - x-cache-tags, x-complexity, x-entities, x-max-complexity, x-ratelimit-limit,
+        x-ratelimit-remaining, x-ratelimit-reset
+      Access-Control-Max-Age:
+      - '1728000'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Api-Version:
+      - '3'
+      X-Content-Type-Options:
+      - nosniff
+      X-Environment:
+      - main
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Queue-Time:
+      - 1ms
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '55'
+      X-Request-Id:
+      - ef7f0841-4462-42d0-a6dd-5c9b2dfb806b
+      X-Runtime:
+      - '0.016349'
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"f65c95cdcd58b768d2995185","type":"job"}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:14 GMT
+- request:
+    method: get
+    uri: https://site-api.datocms.com/job-results/f65c95cdcd58b768d2995185
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <DATOCMS_TOKEN>
+      User-Agent:
+      - ruby-client v0.8.4
+      X-Api-Version:
+      - '3'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 29 Aug 2026 23:28:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - a32f54c01c7c8867-LHR
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"ebbc6e477824f949042bcbd1edb93286"
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Vary:
+      - Accept,Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - authorization, content-type, user-agent, x-api-version, x-base-editing-url,
+        x-cache-tags, x-datocms-trace, x-environment, x-exclude-invalid, x-include-drafts,
+        x-organization, x-session-id, x-site-domain, x-visual-editing
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - x-cache-tags, x-complexity, x-entities, x-max-complexity, x-ratelimit-limit,
+        x-ratelimit-remaining, x-ratelimit-reset
+      Access-Control-Max-Age:
+      - '1728000'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Api-Version:
+      - '3'
+      X-Content-Type-Options:
+      - nosniff
+      X-Environment:
+      - main
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Queue-Time:
+      - 0ms
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '59'
+      X-Request-Id:
+      - 9266da6f-014f-4956-8c54-0eae299f9983
+      X-Runtime:
+      - '0.011199'
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"f65c95cdcd58b768d2995185","type":"job_result","attributes":{"payload":{"data":{"id":"DxR4XmQdQYWPVxZ5XsHT4g","type":"field","attributes":{"label":"File","field_type":"file","api_key":"file","hint":null,"localized":false,"validators":{"required":{}},"position":5,"appearance":{"editor":"file","parameters":{},"addons":[]},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"U8LYMqufSqiL5HG1TH08gg","type":"item_type"}},"fieldset":{"data":null}}},"included":[{"id":"U8LYMqufSqiL5HG1TH08gg","type":"item_type","attributes":{"name":"Article","singleton":false,"sortable":false,"api_key":"article","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"},{"id":"WTGKMTVASXuMYjqtVtYaDw","type":"field"},{"id":"BOdQVEsOQiilsXb9QB7yYw","type":"field"},{"id":"PKW1nVCTQZWSbEE_yAzJeQ","type":"field"},{"id":"DxR4XmQdQYWPVxZ5XsHT4g","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"}},"presentation_image_field":{"data":{"id":"BOdQVEsOQiilsXb9QB7yYw","type":"field"}},"title_field":{"data":{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"}},"image_preview_field":{"data":{"id":"BOdQVEsOQiilsXb9QB7yYw","type":"field"}},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}]},"status":201,"statusText":"Created"}}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:15 GMT
+- request:
+    method: post
+    uri: https://site-api.datocms.com/upload-requests
+    body:
+      encoding: UTF-8
+      string: '{"data":{"type":"upload_request","attributes":{"filename":"file.txt"}}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <DATOCMS_TOKEN>
+      User-Agent:
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -41617,7 +41214,7 @@ http_interactions:
       message: Created
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:54:05 GMT
+      - Sat, 29 Aug 2026 23:28:15 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -41625,7 +41222,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc323ccb79488-LHR
+      - a32f54c0dfb74f9c-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -41633,7 +41230,323 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"d8b2fafc735a9000f50e944f0b70aba1"
+      - W/"a11fb80f7bed163275deecf10b262750"
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Vary:
+      - Accept,Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - authorization, content-type, user-agent, x-api-version, x-base-editing-url,
+        x-cache-tags, x-datocms-trace, x-environment, x-exclude-invalid, x-include-drafts,
+        x-organization, x-session-id, x-site-domain, x-visual-editing
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - x-cache-tags, x-complexity, x-entities, x-max-complexity, x-ratelimit-limit,
+        x-ratelimit-remaining, x-ratelimit-reset
+      Access-Control-Max-Age:
+      - '1728000'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Api-Version:
+      - '3'
+      X-Content-Type-Options:
+      - nosniff
+      X-Environment:
+      - main
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Queue-Time:
+      - 1ms
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '58'
+      X-Request-Id:
+      - f6e6042a-9aef-4be9-861a-8e1d67edc7bf
+      X-Runtime:
+      - '0.015909'
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"/229047/1788046095-file.txt","type":"upload_request","attributes":{"url":"https://datocms-assets.6c36efb897e5eae1d2a887cfa632eea9.eu.r2.cloudflarestorage.com/229047/1788046095-file.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=43952c4b5f6e8765319bc8af0073c64c%2F20260829%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260829T232815Z&X-Amz-Expires=900&X-Amz-SignedHeaders=host&X-Amz-Signature=e03a1d5802cff474ea817e720553407d568c555b9d8519651f47967742bcb9e4","request_headers":{}}}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:15 GMT
+- request:
+    method: put
+    uri: https://datocms-assets.6c36efb897e5eae1d2a887cfa632eea9.eu.r2.cloudflarestorage.com/229047/1788046095-file.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=43952c4b5f6e8765319bc8af0073c64c/20260829/auto/s3/aws4_request&X-Amz-Date=20260829T232815Z&X-Amz-Expires=900&X-Amz-Signature=e03a1d5802cff474ea817e720553407d568c555b9d8519651f47967742bcb9e4&X-Amz-SignedHeaders=host
+    body:
+      encoding: UTF-8
+      string: 'Hi there!
+
+        '
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - datocms-assets.6c36efb897e5eae1d2a887cfa632eea9.eu.r2.cloudflarestorage.com
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 29 Aug 2026 23:28:15 GMT
+      Content-Type:
+      - text/plain;charset=UTF-8
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Etag:
+      - '"2b87e29fca6ee7f1df6c1a76cb58e101"'
+      X-Amz-Checksum-Crc64nvme:
+      - BqiUcDWH3qE=
+      X-Amz-Version-Id:
+      - 7e5fb025cb01410ae805234ecfb6a02a
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - a32f54c149327f0d-LHR
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Sat, 29 Aug 2026 23:28:15 GMT
+- request:
+    method: post
+    uri: https://site-api.datocms.com/uploads
+    body:
+      encoding: UTF-8
+      string: '{"data":{"type":"upload","attributes":{"path":"/229047/1788046095-file.txt"}}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <DATOCMS_TOKEN>
+      User-Agent:
+      - ruby-client v0.8.4
+      X-Api-Version:
+      - '3'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Date:
+      - Sat, 29 Aug 2026 23:28:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - a32f54c28a38f816-LHR
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Vary:
+      - Accept,Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - authorization, content-type, user-agent, x-api-version, x-base-editing-url,
+        x-cache-tags, x-datocms-trace, x-environment, x-exclude-invalid, x-include-drafts,
+        x-organization, x-session-id, x-site-domain, x-visual-editing
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - x-cache-tags, x-complexity, x-entities, x-max-complexity, x-ratelimit-limit,
+        x-ratelimit-remaining, x-ratelimit-reset
+      Access-Control-Max-Age:
+      - '1728000'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Api-Version:
+      - '3'
+      X-Content-Type-Options:
+      - nosniff
+      X-Environment:
+      - main
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Queue-Time:
+      - 1ms
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '57'
+      X-Request-Id:
+      - 8c1bc160-07e9-4370-aea4-c7aa9f107d69
+      X-Runtime:
+      - '0.014787'
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"85a6e4d16c6296bd05640025","type":"job"}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:15 GMT
+- request:
+    method: get
+    uri: https://site-api.datocms.com/job-results/85a6e4d16c6296bd05640025
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <DATOCMS_TOKEN>
+      User-Agent:
+      - ruby-client v0.8.4
+      X-Api-Version:
+      - '3'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 29 Aug 2026 23:28:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - a32f54c93f3a1217-LHR
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"4d6f92095930dc912b4cebd8ff76a4ef"
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Vary:
+      - Accept,Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - authorization, content-type, user-agent, x-api-version, x-base-editing-url,
+        x-cache-tags, x-datocms-trace, x-environment, x-exclude-invalid, x-include-drafts,
+        x-organization, x-session-id, x-site-domain, x-visual-editing
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - x-cache-tags, x-complexity, x-entities, x-max-complexity, x-ratelimit-limit,
+        x-ratelimit-remaining, x-ratelimit-reset
+      Access-Control-Max-Age:
+      - '1728000'
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Api-Version:
+      - '3'
+      X-Content-Type-Options:
+      - nosniff
+      X-Environment:
+      - main
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Queue-Time:
+      - 0ms
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '56'
+      X-Request-Id:
+      - 9b1ff010-0185-43ee-a510-64880bc4b216
+      X-Runtime:
+      - '0.010938'
+      X-Xss-Protection:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"85a6e4d16c6296bd05640025","type":"job_result","attributes":{"payload":{"data":{"id":"Gg6edCbORGSKQs_mZJUOAg","type":"upload","attributes":{"size":10,"width":null,"height":null,"path":"/229047/1788046095-file.txt","format":"txt","author":null,"notes":null,"copyright":null,"default_field_metadata":{"alt":{"en":null,"it":null},"title":{"en":null,"it":null},"custom_data":{"en":{},"it":{}},"focal_point":null,"poster_time":null},"is_image":false,"created_at":"2026-08-29T23:28:16.692Z","updated_at":"2026-08-29T23:28:16.692Z","url":"https://www.datocms-assets.com/229047/1788046095-file.txt","tags":[],"filename":"file.txt","basename":"file","exif_info":{},"mime_type":"text/plain","colors":[],"smart_tags":[],"duration":null,"frame_rate":null,"mux_playback_id":null,"blurhash":null,"thumbhash":null,"mux_mp4_highest_res":null,"md5":"2b87e29fca6ee7f1df6c1a76cb58e101"},"relationships":{"creator":{"data":{"id":"151463","type":"account"}},"upload_collection":{"data":null}},"meta":{"antivirus":{"status":"pending","checked_at":null,"threat_name":null}}}},"status":201,"statusText":"Created"}}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:16 GMT
+- request:
+    method: post
+    uri: https://site-api.datocms.com/items
+    body:
+      encoding: UTF-8
+      string: '{"data":{"type":"item","attributes":{"title":{"en":"First post","it":"Primo
+        post"},"slug":"first-post","image":{"upload_id":"dPBDVGgfRV6s-i_434XSxw"},"content":{"schema":"dast","document":{"type":"root","children":[{"type":"heading","level":1,"children":[{"type":"span","value":"This
+        is the title!"}]},{"type":"paragraph","children":[{"type":"span","value":"And
+        "},{"type":"span","marks":["strong"],"value":"this"},{"type":"span","value":"
+        is an "},{"type":"itemLink","item":"RgBPgxIHS4GttmMF_fy4cg","children":[{"type":"span","value":"author"}]}]},{"type":"paragraph","children":[{"type":"inlineItem","item":"RgBPgxIHS4GttmMF_fy4cg"}]},{"type":"block","item":{"type":"item","attributes":{"title":"Foo"},"relationships":{"item_type":{"data":{"id":"EAQlzoQ2QUaHofIejHzxaQ","type":"item_type"}}}}}]}},"file":{"upload_id":"Gg6edCbORGSKQs_mZJUOAg","alt":"My
+        first file","title":"My first file","custom_data":{}}},"relationships":{"item_type":{"data":{"type":"item_type","id":"U8LYMqufSqiL5HG1TH08gg"}}}}}'
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <DATOCMS_TOKEN>
+      User-Agent:
+      - ruby-client v0.8.4
+      X-Api-Version:
+      - '3'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Sat, 29 Aug 2026 23:28:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - a32f54c9ab8d3d90-LHR
+      Cf-Cache-Status:
+      - DYNAMIC
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"66be43228990f58a7471dcda56b476b2"
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -41672,23 +41585,23 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '55'
       X-Request-Id:
-      - b127ecc3-8ebd-43d7-8d35-cba7a1c103cc
+      - cd0cd470-77b8-4427-a924-144745253549
       X-Runtime:
-      - '0.112599'
+      - '0.103260'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"GT-HC-f6QkK01h9NiCgyNg","type":"item","attributes":{"title":{"en":"First
-        post","it":"Primo post"},"slug":"first-post","image":{"alt":null,"title":null,"custom_data":{},"focal_point":null,"poster_time":null,"upload_id":"PgTzPl6NTdyGkpMSCtgVfA"},"content":{"schema":"dast","document":{"type":"root","children":[{"type":"heading","level":1,"children":[{"type":"span","value":"This
+      string: '{"data":{"id":"GsgBUUpfQ66iPR9xRsX4sw","type":"item","attributes":{"title":{"en":"First
+        post","it":"Primo post"},"slug":"first-post","image":{"alt":null,"title":null,"custom_data":{},"focal_point":null,"poster_time":null,"upload_id":"dPBDVGgfRV6s-i_434XSxw"},"content":{"schema":"dast","document":{"type":"root","children":[{"type":"heading","level":1,"children":[{"type":"span","value":"This
         is the title!"}]},{"type":"paragraph","children":[{"type":"span","value":"And
         "},{"type":"span","marks":["strong"],"value":"this"},{"type":"span","value":"
-        is an "},{"item":"RGRKH1q_TAeVgfZv2x3ylw","type":"itemLink","children":[{"type":"span","value":"author"}]}]},{"type":"paragraph","children":[{"item":"RGRKH1q_TAeVgfZv2x3ylw","type":"inlineItem"}]},{"item":"Ii_J_x2uSS2BeY89r2ApIQ","type":"block"}]}},"file":{"alt":"My
-        first file","title":"My first file","custom_data":{},"focal_point":null,"poster_time":null,"upload_id":"FyUBjGiTTxG1OIJowji9Jw"}},"relationships":{"item_type":{"data":{"id":"B6ryW4ClS7SOuN-aws3-Fg","type":"item_type"}},"creator":{"data":{"id":"151463","type":"account"}}},"meta":{"created_at":"2026-08-29T19:54:05.466+01:00","updated_at":"2026-08-29T19:54:05.468+01:00","published_at":"2026-08-29T19:54:05.490+01:00","publication_scheduled_at":null,"unpublishing_scheduled_at":null,"first_published_at":"2026-08-29T19:54:05.490+01:00","is_valid":true,"is_current_version_valid":true,"is_published_version_valid":true,"has_children":null,"status":"published","current_version":"PPgNcRTiTV-s78W8AT0iZA","stage":null}},"included":[{"id":"B6ryW4ClS7SOuN-aws3-Fg","type":"item_type","attributes":{"name":"Article","singleton":false,"sortable":false,"api_key":"article","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"},{"id":"ARiQqNdvSg-px6BuOYe8Wg","type":"field"},{"id":"HR1QY6qCTaaB-huf10UM7w","type":"field"},{"id":"VDGetnwmQ2a98uLxlZ86rg","type":"field"},{"id":"UFlPKdiyT2qFnVC1AyI0bg","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"}},"presentation_image_field":{"data":{"id":"HR1QY6qCTaaB-huf10UM7w","type":"field"}},"title_field":{"data":{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"}},"image_preview_field":{"data":{"id":"HR1QY6qCTaaB-huf10UM7w","type":"field"}},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}},{"id":"Ii_J_x2uSS2BeY89r2ApIQ","type":"item","attributes":{"title":"Foo"},"relationships":{"item_type":{"data":{"id":"a2gxSskdSo2ygyNDVsKtHA","type":"item_type"}}},"meta":{"created_at":"2026-08-29T19:54:05.447+01:00","updated_at":"2026-08-29T19:54:05.451+01:00","published_at":"2026-08-29T19:54:05.498+01:00","publication_scheduled_at":null,"unpublishing_scheduled_at":null,"first_published_at":"2026-08-29T19:54:05.498+01:00","is_valid":true,"is_current_version_valid":true,"is_published_version_valid":true,"has_children":null,"status":"published","current_version":"FQx6SIqZQmCXRTdTJ8lo9Q","stage":null}}]}'
-  recorded_at: Sat, 29 Aug 2026 18:54:04 GMT
+        is an "},{"item":"RgBPgxIHS4GttmMF_fy4cg","type":"itemLink","children":[{"type":"span","value":"author"}]}]},{"type":"paragraph","children":[{"item":"RgBPgxIHS4GttmMF_fy4cg","type":"inlineItem"}]},{"item":"E5e2KDrjQ4mRT0BFVozMXw","type":"block"}]}},"file":{"alt":"My
+        first file","title":"My first file","custom_data":{},"focal_point":null,"poster_time":null,"upload_id":"Gg6edCbORGSKQs_mZJUOAg"}},"relationships":{"item_type":{"data":{"id":"U8LYMqufSqiL5HG1TH08gg","type":"item_type"}},"creator":{"data":{"id":"151463","type":"account"}}},"meta":{"created_at":"2026-08-30T00:28:16.957+01:00","updated_at":"2026-08-30T00:28:16.959+01:00","published_at":"2026-08-30T00:28:16.980+01:00","publication_scheduled_at":null,"unpublishing_scheduled_at":null,"first_published_at":"2026-08-30T00:28:16.980+01:00","is_valid":true,"is_current_version_valid":true,"is_published_version_valid":true,"has_children":null,"status":"published","current_version":"Oqib1XnNTrCK_4JpCE9nvg","stage":null}},"included":[{"id":"U8LYMqufSqiL5HG1TH08gg","type":"item_type","attributes":{"name":"Article","singleton":false,"sortable":false,"api_key":"article","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"},{"id":"WTGKMTVASXuMYjqtVtYaDw","type":"field"},{"id":"BOdQVEsOQiilsXb9QB7yYw","type":"field"},{"id":"PKW1nVCTQZWSbEE_yAzJeQ","type":"field"},{"id":"DxR4XmQdQYWPVxZ5XsHT4g","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"}},"presentation_image_field":{"data":{"id":"BOdQVEsOQiilsXb9QB7yYw","type":"field"}},"title_field":{"data":{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"}},"image_preview_field":{"data":{"id":"BOdQVEsOQiilsXb9QB7yYw","type":"field"}},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}},{"id":"E5e2KDrjQ4mRT0BFVozMXw","type":"item","attributes":{"title":"Foo"},"relationships":{"item_type":{"data":{"id":"EAQlzoQ2QUaHofIejHzxaQ","type":"item_type"}}},"meta":{"created_at":"2026-08-30T00:28:16.942+01:00","updated_at":"2026-08-30T00:28:16.945+01:00","published_at":"2026-08-30T00:28:16.988+01:00","publication_scheduled_at":null,"unpublishing_scheduled_at":null,"first_published_at":"2026-08-30T00:28:16.988+01:00","is_valid":true,"is_current_version_valid":true,"is_published_version_valid":true,"has_children":null,"status":"published","current_version":"GYKqd6RjSbOS4XbMlOMApw","stage":null}}]}'
+  recorded_at: Sat, 29 Aug 2026 23:28:16 GMT
 - request:
     method: put
-    uri: https://site-api.datocms.com/items/GT-HC-f6QkK01h9NiCgyNg/publish
+    uri: https://site-api.datocms.com/items/GsgBUUpfQ66iPR9xRsX4sw/publish
     body:
       encoding: UTF-8
       string: '{"data":{"type":"selective_publish_operation","attributes":{"content_in_locales":["en","it"],"non_localized_content":true}}}'
@@ -41700,7 +41613,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -41711,7 +41624,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:54:05 GMT
+      - Sat, 29 Aug 2026 23:28:17 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -41719,7 +41632,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc324ef5ae539-LHR
+      - a32f54caadff1991-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -41727,7 +41640,7 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"59c2c16be0236da12fb29471df64a91e"
+      - W/"071b82bef63b10adcec6f098e068c722"
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -41766,23 +41679,23 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '54'
       X-Request-Id:
-      - 6a078fbe-2d0c-41d4-b70a-7f7f3fafac39
+      - efc0f0b0-59d7-421f-938b-0f935fa86a7b
       X-Runtime:
-      - '0.028836'
+      - '0.026280'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"GT-HC-f6QkK01h9NiCgyNg","type":"item","attributes":{"title":{"en":"First
-        post","it":"Primo post"},"slug":"first-post","image":{"alt":null,"title":null,"custom_data":{},"focal_point":null,"poster_time":null,"upload_id":"PgTzPl6NTdyGkpMSCtgVfA"},"content":{"schema":"dast","document":{"type":"root","children":[{"type":"heading","level":1,"children":[{"type":"span","value":"This
+      string: '{"data":{"id":"GsgBUUpfQ66iPR9xRsX4sw","type":"item","attributes":{"title":{"en":"First
+        post","it":"Primo post"},"slug":"first-post","image":{"alt":null,"title":null,"custom_data":{},"focal_point":null,"poster_time":null,"upload_id":"dPBDVGgfRV6s-i_434XSxw"},"content":{"schema":"dast","document":{"type":"root","children":[{"type":"heading","level":1,"children":[{"type":"span","value":"This
         is the title!"}]},{"type":"paragraph","children":[{"type":"span","value":"And
         "},{"type":"span","marks":["strong"],"value":"this"},{"type":"span","value":"
-        is an "},{"item":"RGRKH1q_TAeVgfZv2x3ylw","type":"itemLink","children":[{"type":"span","value":"author"}]}]},{"type":"paragraph","children":[{"item":"RGRKH1q_TAeVgfZv2x3ylw","type":"inlineItem"}]},{"item":"Ii_J_x2uSS2BeY89r2ApIQ","type":"block"}]}},"file":{"alt":"My
-        first file","title":"My first file","custom_data":{},"focal_point":null,"poster_time":null,"upload_id":"FyUBjGiTTxG1OIJowji9Jw"}},"relationships":{"item_type":{"data":{"id":"B6ryW4ClS7SOuN-aws3-Fg","type":"item_type"}},"creator":{"data":{"id":"151463","type":"account"}}},"meta":{"created_at":"2026-08-29T19:54:05.466+01:00","updated_at":"2026-08-29T19:54:05.468+01:00","published_at":"2026-08-29T19:54:05.490+01:00","publication_scheduled_at":null,"unpublishing_scheduled_at":null,"first_published_at":"2026-08-29T19:54:05.490+01:00","is_valid":true,"is_current_version_valid":true,"is_published_version_valid":true,"has_children":null,"status":"published","current_version":"PPgNcRTiTV-s78W8AT0iZA","stage":null}},"included":[{"id":"B6ryW4ClS7SOuN-aws3-Fg","type":"item_type","attributes":{"name":"Article","singleton":false,"sortable":false,"api_key":"article","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"},{"id":"ARiQqNdvSg-px6BuOYe8Wg","type":"field"},{"id":"HR1QY6qCTaaB-huf10UM7w","type":"field"},{"id":"VDGetnwmQ2a98uLxlZ86rg","type":"field"},{"id":"UFlPKdiyT2qFnVC1AyI0bg","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"}},"presentation_image_field":{"data":{"id":"HR1QY6qCTaaB-huf10UM7w","type":"field"}},"title_field":{"data":{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"}},"image_preview_field":{"data":{"id":"HR1QY6qCTaaB-huf10UM7w","type":"field"}},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}]}'
-  recorded_at: Sat, 29 Aug 2026 18:54:04 GMT
+        is an "},{"item":"RgBPgxIHS4GttmMF_fy4cg","type":"itemLink","children":[{"type":"span","value":"author"}]}]},{"type":"paragraph","children":[{"item":"RgBPgxIHS4GttmMF_fy4cg","type":"inlineItem"}]},{"item":"E5e2KDrjQ4mRT0BFVozMXw","type":"block"}]}},"file":{"alt":"My
+        first file","title":"My first file","custom_data":{},"focal_point":null,"poster_time":null,"upload_id":"Gg6edCbORGSKQs_mZJUOAg"}},"relationships":{"item_type":{"data":{"id":"U8LYMqufSqiL5HG1TH08gg","type":"item_type"}},"creator":{"data":{"id":"151463","type":"account"}}},"meta":{"created_at":"2026-08-30T00:28:16.957+01:00","updated_at":"2026-08-30T00:28:16.959+01:00","published_at":"2026-08-30T00:28:16.980+01:00","publication_scheduled_at":null,"unpublishing_scheduled_at":null,"first_published_at":"2026-08-30T00:28:16.980+01:00","is_valid":true,"is_current_version_valid":true,"is_published_version_valid":true,"has_children":null,"status":"published","current_version":"Oqib1XnNTrCK_4JpCE9nvg","stage":null}},"included":[{"id":"U8LYMqufSqiL5HG1TH08gg","type":"item_type","attributes":{"name":"Article","singleton":false,"sortable":false,"api_key":"article","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"},{"id":"WTGKMTVASXuMYjqtVtYaDw","type":"field"},{"id":"BOdQVEsOQiilsXb9QB7yYw","type":"field"},{"id":"PKW1nVCTQZWSbEE_yAzJeQ","type":"field"},{"id":"DxR4XmQdQYWPVxZ5XsHT4g","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"}},"presentation_image_field":{"data":{"id":"BOdQVEsOQiilsXb9QB7yYw","type":"field"}},"title_field":{"data":{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"}},"image_preview_field":{"data":{"id":"BOdQVEsOQiilsXb9QB7yYw","type":"field"}},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}}]}'
+  recorded_at: Sat, 29 Aug 2026 23:28:17 GMT
 - request:
     method: get
-    uri: https://site-api.datocms.com/site?include%5B%5D=item_types&include%5B%5D=item_types.fields
+    uri: https://site-api.datocms.com/uploads?page%5Blimit%5D=100
     body:
       encoding: US-ASCII
       string: ''
@@ -41794,7 +41707,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -41805,7 +41718,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:54:05 GMT
+      - Sat, 29 Aug 2026 23:28:17 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -41813,7 +41726,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc325adb77a4a-LHR
+      - a32f54cb2dd80019-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -41821,7 +41734,7 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"6803da70dd29898e0a4f6be4b235103a"
+      - W/"6052b4e9654bedf9d256e1f59811192f"
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -41860,19 +41773,20 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '52'
       X-Request-Id:
-      - 42d5fe29-8ad5-4faa-ad72-5a75b3555675
+      - 2f7b7c38-76d3-4c0b-8a04-80f786342b09
       X-Runtime:
-      - '0.019499'
+      - '0.016005'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"229039","type":"site","attributes":{"name":"Integration
-        new test site","theme":{"type":"monochromatic","hue":270,"logo":null},"imgix_host":"www.datocms-assets.com","domain":null,"internal_domain":"integration-new-test-site-4963.admin.datocms.com","locales":["en","it"],"last_data_change_at":"2026-08-29T18:53:46.140Z","google_maps_api_token":"AIzaSyDMMrHWNDFFrsj-MYvM0ScFmkzA1YmgsAo","global_seo":{"en":null,"it":null},"favicon":null,"no_index":false,"timezone":"Europe/London","require_2fa":false,"ip_tracking_enabled":true,"force_use_of_sandbox_environments":false,"assets_cdn_default_settings":{"image":{"auto":["format"]},"video":{"disable_serving_raw_videos":true}}},"relationships":{"account":{"data":{"id":"151463","type":"account"}},"owner":{"data":{"id":"151463","type":"account"}},"item_types":{"data":[{"id":"B6ryW4ClS7SOuN-aws3-Fg","type":"item_type"},{"id":"WtkZKwdKQAKPTNHyYDKSHQ","type":"item_type"},{"id":"a2gxSskdSo2ygyNDVsKtHA","type":"item_type"}]}},"meta":{"created_at":"2026-08-29T18:53:46.139Z","improved_timezone_management":true,"improved_hex_management":true,"improved_gql_multilocale_fields":true,"improved_gql_visibility_control":true,"improved_boolean_fields":true,"draft_mode_default":true,"improved_validation_at_publishing":true,"improved_exposure_of_inline_blocks_in_cda":true,"improved_items_listing":true,"milliseconds_in_datetime":true,"non_localized_focal_points":true,"custom_upload_storage_settings":false,"allow_custom_theme":false}},"included":[{"id":"B6ryW4ClS7SOuN-aws3-Fg","type":"item_type","attributes":{"name":"Article","singleton":false,"sortable":false,"api_key":"article","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"},{"id":"ARiQqNdvSg-px6BuOYe8Wg","type":"field"},{"id":"HR1QY6qCTaaB-huf10UM7w","type":"field"},{"id":"VDGetnwmQ2a98uLxlZ86rg","type":"field"},{"id":"UFlPKdiyT2qFnVC1AyI0bg","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"}},"presentation_image_field":{"data":{"id":"HR1QY6qCTaaB-huf10UM7w","type":"field"}},"title_field":{"data":{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field"}},"image_preview_field":{"data":{"id":"HR1QY6qCTaaB-huf10UM7w","type":"field"}},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}},{"id":"CfjqtRhiS16MdFnMqtcRBw","type":"field","attributes":{"label":"Title","field_type":"string","api_key":"title","hint":null,"localized":true,"validators":{"required":{}},"position":1,"appearance":{"addons":[],"editor":"single_line","parameters":{"heading":false,"placeholder":null}},"default_value":{"en":null,"it":null},"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"B6ryW4ClS7SOuN-aws3-Fg","type":"item_type"}},"fieldset":{"data":null}}},{"id":"ARiQqNdvSg-px6BuOYe8Wg","type":"field","attributes":{"label":"Slug","field_type":"slug","api_key":"slug","hint":null,"localized":false,"validators":{"required":{},"slug_title_field":{"title_field_id":"CfjqtRhiS16MdFnMqtcRBw"}},"position":2,"appearance":{"addons":[],"editor":"slug","parameters":{"url_prefix":null,"placeholder":null}},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"B6ryW4ClS7SOuN-aws3-Fg","type":"item_type"}},"fieldset":{"data":null}}},{"id":"HR1QY6qCTaaB-huf10UM7w","type":"field","attributes":{"label":"Image","field_type":"file","api_key":"image","hint":null,"localized":false,"validators":{"required":{},"extension":{"extensions":[],"predefined_list":"image"}},"position":3,"appearance":{"addons":[],"editor":"file","parameters":{}},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"B6ryW4ClS7SOuN-aws3-Fg","type":"item_type"}},"fieldset":{"data":null}}},{"id":"VDGetnwmQ2a98uLxlZ86rg","type":"field","attributes":{"label":"Content","field_type":"structured_text","api_key":"content","hint":null,"localized":false,"validators":{"structured_text_blocks":{"item_types":["a2gxSskdSo2ygyNDVsKtHA"]},"structured_text_links":{"on_publish_with_unpublished_references_strategy":"fail","on_reference_unpublish_strategy":"delete_references","on_reference_delete_strategy":"delete_references","item_types":["WtkZKwdKQAKPTNHyYDKSHQ"]}},"position":4,"appearance":{"addons":[],"editor":"structured_text","parameters":{"marks":["strong","emphasis","underline","strikethrough","code","highlight"],"nodes":["blockquote","code","heading","link","list","thematicBreak","inlineItem","itemLink"],"heading_levels":[1,2,3,4,5,6],"blocks_start_collapsed":false,"show_links_meta_editor":false,"show_links_target_blank":true}},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"B6ryW4ClS7SOuN-aws3-Fg","type":"item_type"}},"fieldset":{"data":null}}},{"id":"UFlPKdiyT2qFnVC1AyI0bg","type":"field","attributes":{"label":"File","field_type":"file","api_key":"file","hint":null,"localized":false,"validators":{"required":{}},"position":5,"appearance":{"addons":[],"editor":"file","parameters":{}},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"B6ryW4ClS7SOuN-aws3-Fg","type":"item_type"}},"fieldset":{"data":null}}},{"id":"WtkZKwdKQAKPTNHyYDKSHQ","type":"item_type","attributes":{"name":"Author","singleton":false,"sortable":false,"api_key":"author","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"CgD-CJ5WTwu8XG4roWoWRw","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"CgD-CJ5WTwu8XG4roWoWRw","type":"field"}},"presentation_image_field":{"data":null},"title_field":{"data":{"id":"CgD-CJ5WTwu8XG4roWoWRw","type":"field"}},"image_preview_field":{"data":null},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}},{"id":"CgD-CJ5WTwu8XG4roWoWRw","type":"field","attributes":{"label":"Name","field_type":"string","api_key":"name","hint":null,"localized":false,"validators":{"required":{}},"position":1,"appearance":{"addons":[],"editor":"single_line","parameters":{"heading":false,"placeholder":null}},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"WtkZKwdKQAKPTNHyYDKSHQ","type":"item_type"}},"fieldset":{"data":null}}},{"id":"a2gxSskdSo2ygyNDVsKtHA","type":"item_type","attributes":{"name":"Block","singleton":false,"sortable":false,"api_key":"block","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":true,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"URUZXofOSlGYxZcjqoHbqA","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"URUZXofOSlGYxZcjqoHbqA","type":"field"}},"presentation_image_field":{"data":null},"title_field":{"data":null},"image_preview_field":{"data":null},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}},{"id":"URUZXofOSlGYxZcjqoHbqA","type":"field","attributes":{"label":"Title","field_type":"string","api_key":"title","hint":null,"localized":false,"validators":{"required":{}},"position":1,"appearance":{"addons":[],"editor":"single_line","parameters":{"heading":false,"placeholder":null}},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"a2gxSskdSo2ygyNDVsKtHA","type":"item_type"}},"fieldset":{"data":null}}}]}'
-  recorded_at: Sat, 29 Aug 2026 18:54:04 GMT
+      string: '{"data":[{"id":"Gg6edCbORGSKQs_mZJUOAg","type":"upload","attributes":{"size":10,"width":null,"height":null,"path":"/229047/1788046095-file.txt","format":"txt","author":null,"notes":null,"copyright":null,"default_field_metadata":{"alt":{"en":null,"it":null},"title":{"en":null,"it":null},"custom_data":{"en":{},"it":{}},"focal_point":null,"poster_time":null},"is_image":false,"created_at":"2026-08-29T23:28:16.692Z","updated_at":"2026-08-29T23:28:16.692Z","url":"https://www.datocms-assets.com/229047/1788046095-file.txt","tags":[],"filename":"file.txt","basename":"file","exif_info":{},"mime_type":"text/plain","colors":[],"smart_tags":[],"duration":null,"frame_rate":null,"mux_playback_id":null,"blurhash":null,"thumbhash":null,"mux_mp4_highest_res":null,"md5":"2b87e29fca6ee7f1df6c1a76cb58e101"},"relationships":{"creator":{"data":{"id":"151463","type":"account"}},"upload_collection":{"data":null}},"meta":{"antivirus":{"status":"clean","checked_at":"2026-08-29T23:28:16.860Z","threat_name":null}}},{"id":"dPBDVGgfRV6s-i_434XSxw","type":"upload","attributes":{"size":119271,"width":2553,"height":621,"path":"/229047/1788046086-1549027974-logo.png","format":"png","author":null,"notes":null,"copyright":null,"default_field_metadata":{"alt":{"en":"My
+        first post","it":"Il mio primo post"},"title":{"en":"First post","it":"Primo
+        post"},"custom_data":{"en":{},"it":{}},"focal_point":{"x":0.1,"y":0.1},"poster_time":null},"is_image":true,"created_at":"2026-08-29T23:28:10.388Z","updated_at":"2026-08-29T23:28:10.391Z","url":"https://www.datocms-assets.com/229047/1788046086-1549027974-logo.png","tags":[],"filename":"1549027974-logo.png","basename":"1549027974-logo","exif_info":{},"mime_type":"image/png","colors":[{"red":14,"green":107,"blue":139,"alpha":255},{"red":171,"green":203,"blue":215,"alpha":255},{"red":12,"green":106,"blue":138,"alpha":255},{"red":82,"green":149,"blue":172,"alpha":255},{"red":162,"green":198,"blue":210,"alpha":255}],"smart_tags":["logo"],"duration":null,"frame_rate":null,"mux_playback_id":null,"blurhash":"LcRD1WR+Iot7~qWBWBa}?aofj[oL","thumbhash":"2WWBAYAS3nqIiAXfd/V9V6tpiIhgd5c=","mux_mp4_highest_res":null,"md5":"789dc068e8ef24a6a2d93847ec259d6d"},"relationships":{"creator":{"data":{"id":"151463","type":"account"}},"upload_collection":{"data":null}},"meta":{"antivirus":{"status":"clean","checked_at":"2026-08-29T23:28:10.564Z","threat_name":null}}}],"meta":{"total_count":2}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:17 GMT
 - request:
     method: get
-    uri: https://site-api.datocms.com/uploads?page%5Blimit%5D=100
+    uri: https://site-api.datocms.com/site?include%5B%5D=item_types&include%5B%5D=item_types.fields
     body:
       encoding: US-ASCII
       string: ''
@@ -41884,7 +41798,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -41895,7 +41809,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:54:05 GMT
+      - Sat, 29 Aug 2026 23:28:17 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -41903,7 +41817,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc325a86d71b4-LHR
+      - a32f54cb2c4e0034-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -41911,7 +41825,7 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"31270c9ccb7631a4b7980fda5e3ae765"
+      - W/"ef5beb222390c9f5d0c6b8f3aa247523"
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -41944,23 +41858,22 @@ http_interactions:
       X-Permitted-Cross-Domain-Policies:
       - none
       X-Queue-Time:
-      - 1ms
+      - 0ms
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
-      - '51'
+      - '53'
       X-Request-Id:
-      - ff599838-a544-4d72-934e-131fa83cb238
+      - 0e38a1c5-f77a-435c-bdde-6de751082fb9
       X-Runtime:
-      - '0.014890'
+      - '0.022300'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"FyUBjGiTTxG1OIJowji9Jw","type":"upload","attributes":{"size":10,"width":null,"height":null,"path":"/229039/1788029643-file.txt","format":"txt","author":null,"notes":null,"copyright":null,"default_field_metadata":{"alt":{"en":null,"it":null},"title":{"en":null,"it":null},"custom_data":{"en":{},"it":{}},"focal_point":null,"poster_time":null},"is_image":false,"created_at":"2026-08-29T18:54:05.168Z","updated_at":"2026-08-29T18:54:05.168Z","url":"https://www.datocms-assets.com/229039/1788029643-file.txt","tags":[],"filename":"file.txt","basename":"file","exif_info":{},"mime_type":"text/plain","colors":[],"smart_tags":[],"duration":null,"frame_rate":null,"mux_playback_id":null,"blurhash":null,"thumbhash":null,"mux_mp4_highest_res":null,"md5":"2b87e29fca6ee7f1df6c1a76cb58e101"},"relationships":{"creator":{"data":{"id":"151463","type":"account"}},"upload_collection":{"data":null}},"meta":{"antivirus":{"status":"clean","checked_at":"2026-08-29T18:54:05.339Z","threat_name":null}}},{"id":"PgTzPl6NTdyGkpMSCtgVfA","type":"upload","attributes":{"size":119271,"width":2553,"height":621,"path":"/229039/1788029633-1549027974-logo.png","format":"png","author":null,"notes":null,"copyright":null,"default_field_metadata":{"alt":{"en":"My
-        first post","it":"Il mio primo post"},"title":{"en":"First post","it":"Primo
-        post"},"custom_data":{"en":{},"it":{}},"focal_point":{"x":0.1,"y":0.1},"poster_time":null},"is_image":true,"created_at":"2026-08-29T18:53:57.921Z","updated_at":"2026-08-29T18:53:57.926Z","url":"https://www.datocms-assets.com/229039/1788029633-1549027974-logo.png","tags":[],"filename":"1549027974-logo.png","basename":"1549027974-logo","exif_info":{},"mime_type":"image/png","colors":[{"red":14,"green":107,"blue":139,"alpha":255},{"red":171,"green":203,"blue":215,"alpha":255},{"red":12,"green":106,"blue":138,"alpha":255},{"red":82,"green":149,"blue":172,"alpha":255},{"red":162,"green":198,"blue":210,"alpha":255}],"smart_tags":["logo"],"duration":null,"frame_rate":null,"mux_playback_id":null,"blurhash":"LcRD1WR+Iot7~qWBWBa}?aofj[oL","thumbhash":"2WWBAYAS3nqIiAXfd/V9V6tpiIhgd5c=","mux_mp4_highest_res":null,"md5":"789dc068e8ef24a6a2d93847ec259d6d"},"relationships":{"creator":{"data":{"id":"151463","type":"account"}},"upload_collection":{"data":null}},"meta":{"antivirus":{"status":"clean","checked_at":"2026-08-29T18:53:58.086Z","threat_name":null}}}],"meta":{"total_count":2}}'
-  recorded_at: Sat, 29 Aug 2026 18:54:04 GMT
+      string: '{"data":{"id":"229047","type":"site","attributes":{"name":"Integration
+        new test site","theme":{"type":"monochromatic","hue":270,"logo":null},"imgix_host":"www.datocms-assets.com","domain":null,"internal_domain":"integration-new-test-site-6974.admin.datocms.com","locales":["en","it"],"last_data_change_at":"2026-08-29T23:27:57.618Z","google_maps_api_token":"AIzaSyDMMrHWNDFFrsj-MYvM0ScFmkzA1YmgsAo","global_seo":{"en":null,"it":null},"favicon":null,"no_index":false,"timezone":"Europe/London","require_2fa":false,"ip_tracking_enabled":true,"force_use_of_sandbox_environments":false,"assets_cdn_default_settings":{"image":{"auto":["format"]},"video":{"disable_serving_raw_videos":true}}},"relationships":{"account":{"data":{"id":"151463","type":"account"}},"owner":{"data":{"id":"151463","type":"account"}},"item_types":{"data":[{"id":"EAQlzoQ2QUaHofIejHzxaQ","type":"item_type"},{"id":"U8LYMqufSqiL5HG1TH08gg","type":"item_type"},{"id":"bz08Ax43QgmucxhEfaeWGA","type":"item_type"}]}},"meta":{"created_at":"2026-08-29T23:27:57.617Z","improved_timezone_management":true,"improved_hex_management":true,"improved_gql_multilocale_fields":true,"improved_gql_visibility_control":true,"improved_boolean_fields":true,"draft_mode_default":true,"improved_validation_at_publishing":true,"improved_exposure_of_inline_blocks_in_cda":true,"improved_items_listing":true,"milliseconds_in_datetime":true,"non_localized_focal_points":true,"custom_upload_storage_settings":false,"allow_custom_theme":false}},"included":[{"id":"EAQlzoQ2QUaHofIejHzxaQ","type":"item_type","attributes":{"name":"Block","singleton":false,"sortable":false,"api_key":"block","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":true,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"Wnk7X85qSqGnntT3LRymDA","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"Wnk7X85qSqGnntT3LRymDA","type":"field"}},"presentation_image_field":{"data":null},"title_field":{"data":null},"image_preview_field":{"data":null},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}},{"id":"Wnk7X85qSqGnntT3LRymDA","type":"field","attributes":{"label":"Title","field_type":"string","api_key":"title","hint":null,"localized":false,"validators":{"required":{}},"position":1,"appearance":{"addons":[],"editor":"single_line","parameters":{"heading":false,"placeholder":null}},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"EAQlzoQ2QUaHofIejHzxaQ","type":"item_type"}},"fieldset":{"data":null}}},{"id":"U8LYMqufSqiL5HG1TH08gg","type":"item_type","attributes":{"name":"Article","singleton":false,"sortable":false,"api_key":"article","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"},{"id":"WTGKMTVASXuMYjqtVtYaDw","type":"field"},{"id":"BOdQVEsOQiilsXb9QB7yYw","type":"field"},{"id":"PKW1nVCTQZWSbEE_yAzJeQ","type":"field"},{"id":"DxR4XmQdQYWPVxZ5XsHT4g","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"}},"presentation_image_field":{"data":{"id":"BOdQVEsOQiilsXb9QB7yYw","type":"field"}},"title_field":{"data":{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field"}},"image_preview_field":{"data":{"id":"BOdQVEsOQiilsXb9QB7yYw","type":"field"}},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}},{"id":"Y3toIuWQShSbHr_7e8zPHA","type":"field","attributes":{"label":"Title","field_type":"string","api_key":"title","hint":null,"localized":true,"validators":{"required":{}},"position":1,"appearance":{"addons":[],"editor":"single_line","parameters":{"heading":false,"placeholder":null}},"default_value":{"en":null,"it":null},"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"U8LYMqufSqiL5HG1TH08gg","type":"item_type"}},"fieldset":{"data":null}}},{"id":"WTGKMTVASXuMYjqtVtYaDw","type":"field","attributes":{"label":"Slug","field_type":"slug","api_key":"slug","hint":null,"localized":false,"validators":{"required":{},"slug_title_field":{"title_field_id":"Y3toIuWQShSbHr_7e8zPHA"}},"position":2,"appearance":{"addons":[],"editor":"slug","parameters":{"url_prefix":null,"placeholder":null}},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"U8LYMqufSqiL5HG1TH08gg","type":"item_type"}},"fieldset":{"data":null}}},{"id":"BOdQVEsOQiilsXb9QB7yYw","type":"field","attributes":{"label":"Image","field_type":"file","api_key":"image","hint":null,"localized":false,"validators":{"required":{},"extension":{"extensions":[],"predefined_list":"image"}},"position":3,"appearance":{"addons":[],"editor":"file","parameters":{}},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"U8LYMqufSqiL5HG1TH08gg","type":"item_type"}},"fieldset":{"data":null}}},{"id":"PKW1nVCTQZWSbEE_yAzJeQ","type":"field","attributes":{"label":"Content","field_type":"structured_text","api_key":"content","hint":null,"localized":false,"validators":{"structured_text_blocks":{"item_types":["EAQlzoQ2QUaHofIejHzxaQ"]},"structured_text_links":{"on_publish_with_unpublished_references_strategy":"fail","on_reference_unpublish_strategy":"delete_references","on_reference_delete_strategy":"delete_references","item_types":["bz08Ax43QgmucxhEfaeWGA"]}},"position":4,"appearance":{"addons":[],"editor":"structured_text","parameters":{"marks":["strong","emphasis","underline","strikethrough","code","highlight"],"nodes":["blockquote","code","heading","link","list","thematicBreak","inlineItem","itemLink"],"heading_levels":[1,2,3,4,5,6],"blocks_start_collapsed":false,"show_links_meta_editor":false,"show_links_target_blank":true}},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"U8LYMqufSqiL5HG1TH08gg","type":"item_type"}},"fieldset":{"data":null}}},{"id":"DxR4XmQdQYWPVxZ5XsHT4g","type":"field","attributes":{"label":"File","field_type":"file","api_key":"file","hint":null,"localized":false,"validators":{"required":{}},"position":5,"appearance":{"addons":[],"editor":"file","parameters":{}},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"U8LYMqufSqiL5HG1TH08gg","type":"item_type"}},"fieldset":{"data":null}}},{"id":"bz08Ax43QgmucxhEfaeWGA","type":"item_type","attributes":{"name":"Author","singleton":false,"sortable":false,"api_key":"author","ordering_direction":null,"ordering_meta":null,"tree":false,"modular_block":false,"draft_mode_active":false,"draft_saving_active":false,"all_locales_required":true,"collection_appearance":"compact","has_singleton_item":false,"hint":null,"inverse_relationships_enabled":false},"relationships":{"fields":{"data":[{"id":"dMxU4aYbQ3WpwMK9oMXOlA","type":"field"}]},"fieldsets":{"data":[]},"singleton_item":{"data":null},"ordering_field":{"data":null},"presentation_title_field":{"data":{"id":"dMxU4aYbQ3WpwMK9oMXOlA","type":"field"}},"presentation_image_field":{"data":null},"title_field":{"data":{"id":"dMxU4aYbQ3WpwMK9oMXOlA","type":"field"}},"image_preview_field":{"data":null},"excerpt_field":{"data":null},"workflow":{"data":null}},"meta":{"has_singleton_item":false}},{"id":"dMxU4aYbQ3WpwMK9oMXOlA","type":"field","attributes":{"label":"Name","field_type":"string","api_key":"name","hint":null,"localized":false,"validators":{"required":{}},"position":1,"appearance":{"addons":[],"editor":"single_line","parameters":{"heading":false,"placeholder":null}},"default_value":null,"deep_filtering_enabled":false,"content_link_enabled":true},"relationships":{"item_type":{"data":{"id":"bz08Ax43QgmucxhEfaeWGA","type":"item_type"}},"fieldset":{"data":null}}}]}'
+  recorded_at: Sat, 29 Aug 2026 23:28:17 GMT
 - request:
     method: get
     uri: https://site-api.datocms.com/items?page%5Blimit%5D=100&version=published
@@ -41975,7 +41888,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -41986,7 +41899,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:54:05 GMT
+      - Sat, 29 Aug 2026 23:28:17 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -41994,7 +41907,7 @@ http_interactions:
       Connection:
       - keep-alive
       Cf-Ray:
-      - a32dc32598eb652b-LHR
+      - a32f54cb2ee35592-LHR
       Cf-Cache-Status:
       - DYNAMIC
       Access-Control-Allow-Origin:
@@ -42002,7 +41915,7 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Etag:
-      - W/"a6bfe6b79f3bf0b25d58a8af4e99ad6a"
+      - W/"6582da58717c75d12fda5725a5d72dfc"
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -42041,26 +41954,26 @@ http_interactions:
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
-      - '53'
+      - '51'
       X-Request-Id:
-      - a3398889-fada-4840-894e-22ebbe86a304
+      - 18802d28-2aed-4243-ac19-d09c280b5bbc
       X-Runtime:
-      - '0.019244'
+      - '0.019271'
       X-Xss-Protection:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"GT-HC-f6QkK01h9NiCgyNg","type":"item","attributes":{"title":{"en":"First
-        post","it":"Primo post"},"slug":"first-post","image":{"alt":null,"title":null,"custom_data":{},"focal_point":null,"poster_time":null,"upload_id":"PgTzPl6NTdyGkpMSCtgVfA"},"content":{"schema":"dast","document":{"type":"root","children":[{"type":"heading","level":1,"children":[{"type":"span","value":"This
+      string: '{"data":[{"id":"GsgBUUpfQ66iPR9xRsX4sw","type":"item","attributes":{"title":{"en":"First
+        post","it":"Primo post"},"slug":"first-post","image":{"alt":null,"title":null,"custom_data":{},"focal_point":null,"poster_time":null,"upload_id":"dPBDVGgfRV6s-i_434XSxw"},"content":{"schema":"dast","document":{"type":"root","children":[{"type":"heading","level":1,"children":[{"type":"span","value":"This
         is the title!"}]},{"type":"paragraph","children":[{"type":"span","value":"And
         "},{"type":"span","marks":["strong"],"value":"this"},{"type":"span","value":"
-        is an "},{"item":"RGRKH1q_TAeVgfZv2x3ylw","type":"itemLink","children":[{"type":"span","value":"author"}]}]},{"type":"paragraph","children":[{"item":"RGRKH1q_TAeVgfZv2x3ylw","type":"inlineItem"}]},{"item":"Ii_J_x2uSS2BeY89r2ApIQ","type":"block"}]}},"file":{"alt":"My
-        first file","title":"My first file","custom_data":{},"focal_point":null,"poster_time":null,"upload_id":"FyUBjGiTTxG1OIJowji9Jw"}},"relationships":{"item_type":{"data":{"id":"B6ryW4ClS7SOuN-aws3-Fg","type":"item_type"}},"creator":{"data":{"id":"151463","type":"account"}}},"meta":{"created_at":"2026-08-29T19:54:05.466+01:00","updated_at":"2026-08-29T19:54:05.468+01:00","published_at":"2026-08-29T19:54:05.490+01:00","publication_scheduled_at":null,"unpublishing_scheduled_at":null,"first_published_at":"2026-08-29T19:54:05.490+01:00","is_valid":true,"is_current_version_valid":true,"is_published_version_valid":true,"has_children":null,"status":"published","current_version":"PPgNcRTiTV-s78W8AT0iZA","stage":null}},{"id":"Ii_J_x2uSS2BeY89r2ApIQ","type":"item","attributes":{"title":"Foo"},"relationships":{"item_type":{"data":{"id":"a2gxSskdSo2ygyNDVsKtHA","type":"item_type"}}},"meta":{"created_at":"2026-08-29T19:54:05.447+01:00","updated_at":"2026-08-29T19:54:05.451+01:00","published_at":"2026-08-29T19:54:05.498+01:00","publication_scheduled_at":null,"unpublishing_scheduled_at":null,"first_published_at":"2026-08-29T19:54:05.498+01:00","is_valid":true,"is_current_version_valid":true,"is_published_version_valid":true,"has_children":null,"status":"published","current_version":"FQx6SIqZQmCXRTdTJ8lo9Q","stage":null}},{"id":"RGRKH1q_TAeVgfZv2x3ylw","type":"item","attributes":{"name":"Mark
-        Smith"},"relationships":{"item_type":{"data":{"id":"WtkZKwdKQAKPTNHyYDKSHQ","type":"item_type"}},"creator":{"data":{"id":"151463","type":"account"}}},"meta":{"created_at":"2026-08-29T19:54:01.351+01:00","updated_at":"2026-08-29T19:54:01.354+01:00","published_at":"2026-08-29T19:54:01.364+01:00","publication_scheduled_at":null,"unpublishing_scheduled_at":null,"first_published_at":"2026-08-29T19:54:01.364+01:00","is_valid":true,"is_current_version_valid":true,"is_published_version_valid":true,"has_children":null,"status":"published","current_version":"S1GRzdhcRHG2_KX90TwuJw","stage":null}}],"meta":{"total_count":3}}'
-  recorded_at: Sat, 29 Aug 2026 18:54:04 GMT
+        is an "},{"item":"RgBPgxIHS4GttmMF_fy4cg","type":"itemLink","children":[{"type":"span","value":"author"}]}]},{"type":"paragraph","children":[{"item":"RgBPgxIHS4GttmMF_fy4cg","type":"inlineItem"}]},{"item":"E5e2KDrjQ4mRT0BFVozMXw","type":"block"}]}},"file":{"alt":"My
+        first file","title":"My first file","custom_data":{},"focal_point":null,"poster_time":null,"upload_id":"Gg6edCbORGSKQs_mZJUOAg"}},"relationships":{"item_type":{"data":{"id":"U8LYMqufSqiL5HG1TH08gg","type":"item_type"}},"creator":{"data":{"id":"151463","type":"account"}}},"meta":{"created_at":"2026-08-30T00:28:16.957+01:00","updated_at":"2026-08-30T00:28:16.959+01:00","published_at":"2026-08-30T00:28:16.980+01:00","publication_scheduled_at":null,"unpublishing_scheduled_at":null,"first_published_at":"2026-08-30T00:28:16.980+01:00","is_valid":true,"is_current_version_valid":true,"is_published_version_valid":true,"has_children":null,"status":"published","current_version":"Oqib1XnNTrCK_4JpCE9nvg","stage":null}},{"id":"E5e2KDrjQ4mRT0BFVozMXw","type":"item","attributes":{"title":"Foo"},"relationships":{"item_type":{"data":{"id":"EAQlzoQ2QUaHofIejHzxaQ","type":"item_type"}}},"meta":{"created_at":"2026-08-30T00:28:16.942+01:00","updated_at":"2026-08-30T00:28:16.945+01:00","published_at":"2026-08-30T00:28:16.988+01:00","publication_scheduled_at":null,"unpublishing_scheduled_at":null,"first_published_at":"2026-08-30T00:28:16.988+01:00","is_valid":true,"is_current_version_valid":true,"is_published_version_valid":true,"has_children":null,"status":"published","current_version":"GYKqd6RjSbOS4XbMlOMApw","stage":null}},{"id":"RgBPgxIHS4GttmMF_fy4cg","type":"item","attributes":{"name":"Mark
+        Smith"},"relationships":{"item_type":{"data":{"id":"bz08Ax43QgmucxhEfaeWGA","type":"item_type"}},"creator":{"data":{"id":"151463","type":"account"}}},"meta":{"created_at":"2026-08-30T00:28:13.053+01:00","updated_at":"2026-08-30T00:28:13.056+01:00","published_at":"2026-08-30T00:28:13.071+01:00","publication_scheduled_at":null,"unpublishing_scheduled_at":null,"first_published_at":"2026-08-30T00:28:13.071+01:00","is_valid":true,"is_current_version_valid":true,"is_published_version_valid":true,"has_children":null,"status":"published","current_version":"TZEiS1rgRuGDm9G8mY64Eg","stage":null}}],"meta":{"total_count":3}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:17 GMT
 - request:
     method: delete
-    uri: https://account-api.datocms.com/sites/229039
+    uri: https://account-api.datocms.com/sites/229047
     body:
       encoding: US-ASCII
       string: ''
@@ -42072,7 +41985,7 @@ http_interactions:
       Authorization:
       - Bearer <DATOCMS_TOKEN>
       User-Agent:
-      - ruby-client v0.8.3
+      - ruby-client v0.8.4
       X-Api-Version:
       - '3'
       Accept-Encoding:
@@ -42083,7 +41996,7 @@ http_interactions:
       message: Accepted
     headers:
       Date:
-      - Sat, 29 Aug 2026 18:54:05 GMT
+      - Sat, 29 Aug 2026 23:28:17 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -42111,94 +42024,9 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - d0f882eb-1ab6-4dc6-b095-ba84ca787a56
+      - a8186092-f223-4f0d-ba67-6e63bb2d8bb9
       X-Runtime:
-      - '0.013084'
-      X-Queue-Time:
-      - 1ms
-      Strict-Transport-Security:
-      - max-age=15552000; includeSubDomains; preload
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Allow-Headers:
-      - authorization, content-type, user-agent, x-api-version, x-base-editing-url,
-        x-cache-tags, x-datocms-trace, x-environment, x-exclude-invalid, x-include-drafts,
-        x-organization, x-session-id, x-site-domain, x-visual-editing
-      Access-Control-Allow-Methods:
-      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
-      Access-Control-Expose-Headers:
-      - x-cache-tags, x-complexity, x-entities, x-max-complexity, x-ratelimit-limit,
-        x-ratelimit-remaining, x-ratelimit-reset
-      Access-Control-Max-Age:
-      - '1728000'
-      Access-Control-Allow-Origin:
-      - "*"
-      Cf-Cache-Status:
-      - DYNAMIC
-      Cf-Ray:
-      - a32dc3264c6a62c0-LHR
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"05264d9e8bb1c7ba94e65b49","type":"job"}}'
-  recorded_at: Sat, 29 Aug 2026 18:54:04 GMT
-- request:
-    method: get
-    uri: https://account-api.datocms.com/job-results/05264d9e8bb1c7ba94e65b49
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Content-Type:
-      - application/json
-      Authorization:
-      - Bearer <DATOCMS_TOKEN>
-      User-Agent:
-      - ruby-client v0.8.3
-      X-Api-Version:
-      - '3'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Sat, 29 Aug 2026 18:54:06 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '1154'
-      Connection:
-      - keep-alive
-      Server:
-      - cloudflare
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Vary:
-      - Accept,Accept-Encoding
-      X-Ratelimit-Limit:
-      - '30'
-      X-Ratelimit-Remaining:
-      - '29'
-      Etag:
-      - W/"681d2c9953f40ed56585910e718f552c"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 3044f2b9-ec62-4351-82da-f303a48fda25
-      X-Runtime:
-      - '0.006829'
+      - '0.015968'
       X-Queue-Time:
       - 0ms
       Strict-Transport-Security:
@@ -42221,10 +42049,95 @@ http_interactions:
       Cf-Cache-Status:
       - DYNAMIC
       Cf-Ray:
-      - a32dc32d6c250019-LHR
+      - a32f54cba8dd41b8-LHR
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"05264d9e8bb1c7ba94e65b49","type":"job_result","attributes":{"payload":{"data":{"id":"229039","type":"site","attributes":{"name":"Integration
-        new test site","domain":null,"internal_subdomain":"integration-new-test-site-4963","last_data_change_at":"2026-08-29T18:53:46.140Z","access_token":"<DATOCMS_ACCESS_TOKEN>","internal_domain":"integration-new-test-site-4963.admin.datocms.com","created_at":"2026-08-29T18:53:46.139Z","readwrite_token":null,"readonly_token":"<DATOCMS_READONLY_TOKEN>","deactivated":false,"status":"destroying","is_public_template":false},"relationships":{"active_subscription":{"data":null},"active_plan":{"data":null},"transfer":{"data":null}},"meta":{"last_data_change_at":"2026-08-29T18:53:46.140Z","created_at":"2026-08-29T18:53:46.139Z","deactivated":false,"status":"destroying","owner":{"type":"account","email":"vcr-test-account@example.invalid"},"require_2fa":false}}},"status":200,"statusText":"OK"}}}'
-  recorded_at: Sat, 29 Aug 2026 18:54:05 GMT
+      string: '{"data":{"id":"fe0206bc3b2dd45a983c7dc8","type":"job"}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:17 GMT
+- request:
+    method: get
+    uri: https://account-api.datocms.com/job-results/fe0206bc3b2dd45a983c7dc8
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <DATOCMS_TOKEN>
+      User-Agent:
+      - ruby-client v0.8.4
+      X-Api-Version:
+      - '3'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 29 Aug 2026 23:28:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '644'
+      Connection:
+      - keep-alive
+      Server:
+      - cloudflare
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Vary:
+      - Accept,Accept-Encoding
+      X-Ratelimit-Limit:
+      - '30'
+      X-Ratelimit-Remaining:
+      - '29'
+      Etag:
+      - W/"933d0fe6a2c3b664cee6469dc2647d53"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 53638688-0b13-42f2-be7a-42329b9724c4
+      X-Runtime:
+      - '0.006363'
+      X-Queue-Time:
+      - 1ms
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - authorization, content-type, user-agent, x-api-version, x-base-editing-url,
+        x-cache-tags, x-datocms-trace, x-environment, x-exclude-invalid, x-include-drafts,
+        x-organization, x-session-id, x-site-domain, x-visual-editing
+      Access-Control-Allow-Methods:
+      - GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS
+      Access-Control-Expose-Headers:
+      - x-cache-tags, x-complexity, x-entities, x-max-complexity, x-ratelimit-limit,
+        x-ratelimit-remaining, x-ratelimit-reset
+      Access-Control-Max-Age:
+      - '1728000'
+      Access-Control-Allow-Origin:
+      - "*"
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Ray:
+      - a32f54d2aadf9544-LHR
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"fe0206bc3b2dd45a983c7dc8","type":"job_result","attributes":{"payload":{"data":{"id":"229047","type":"site","attributes":{"name":"Integration
+        new test site","domain":null,"internal_subdomain":"integration-new-test-site-6974","last_data_change_at":"2026-08-29T23:27:57.618Z","access_token":"<DATOCMS_ACCESS_TOKEN>","internal_domain":"integration-new-test-site-6974.admin.datocms.com","created_at":"2026-08-29T23:27:57.617Z","readwrite_token":null,"readonly_token":"<DATOCMS_READONLY_TOKEN>","deactivated":false,"status":"destroying","is_public_template":false},"relationships":{"active_subscription":{"data":null},"active_plan":{"data":null},"transfer":{"data":null}},"meta":{"last_data_change_at":"2026-08-29T23:27:57.618Z","created_at":"2026-08-29T23:27:57.617Z","deactivated":false,"status":"destroying","owner":{"type":"account","email":"vcr-test-account@example.invalid"},"require_2fa":false}}},"status":200,"statusText":"OK"}}}'
+  recorded_at: Sat, 29 Aug 2026 23:28:18 GMT
 recorded_with: VCR 6.4.0

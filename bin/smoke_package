@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if (( $# != 1 )); then
+	echo "Usage: $0 PATH_TO_GEM" >&2
+	exit 2
+fi
+
+gem_file="$1"
+
+if [[ ! -f "$gem_file" ]]; then
+	echo "Gem not found: $gem_file" >&2
+	exit 2
+fi
+
+# Exercise consumer dependency resolution without touching the active gem home.
+smoke_root="$(mktemp -d /tmp/dato-smoke.XXXXXX)"
+cleanup() {
+	rm -rf -- "$smoke_root"
+}
+trap cleanup EXIT
+
+gem install --install-dir "$smoke_root" --no-document "$gem_file"
+GEM_HOME="$smoke_root" GEM_PATH="$smoke_root" ruby -rdato -e 'abort "Dato version is unavailable" unless Dato::VERSION'
+GEM_HOME="$smoke_root" GEM_PATH="$smoke_root" "$smoke_root/bin/dato" help

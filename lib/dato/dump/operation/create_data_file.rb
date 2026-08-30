@@ -19,9 +19,7 @@ module Dato
         def perform
           FileUtils.mkdir_p(File.dirname(path))
 
-          File.open(File.join(context.path, path), "w") do |file|
-            file.write Format.dump(format, value)
-          end
+          File.write(File.join(context.path, path), Format.dump(format, value))
         end
       end
     end

@@ -27,11 +27,7 @@ module Dato
       end
 
       def respond_to_missing?(method, include_private = false)
-        if collections_by_type.key?(method)
-          true
-        else
-          super
-        end
+        collections_by_type.key?(method) || super
       end
 
       def site
@@ -180,11 +176,11 @@ module Dato
       class ItemCollection < Array
         def each(&block)
           if block && block.arity == 2
-            each_with_object({}) do |item, acc|
-              acc[item.id] = item
+            to_h do |item|
+              [item.id, item]
             end.each(&block)
           else
-            super(&block)
+            super
           end
         end
 
@@ -192,7 +188,7 @@ module Dato
           if id.is_a? String
             find { |item| item.id == id }
           else
-            super(id)
+            super
           end
         end
 

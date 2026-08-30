@@ -21,7 +21,7 @@ module Dato
           expect(serialized_site[:name]).to eq "Integration new test site"
           expect(serialized_site[:locales]).to eq %w[en it]
 
-          article_type = repo.item_types.find { |it| it[:api_key] == "article" }
+          article_type = repo.item_types.find { |item_type| item_type[:api_key] == "article" }
           serialized_article = repo.items_of_type(article_type).first.to_hash
           expect(serialized_article[:item_type]).to eq "article"
           expect(serialized_article[:updated_at]).to be_present

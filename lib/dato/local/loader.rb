@@ -12,14 +12,13 @@ module Dato
 
       PUSHER_API_KEY = "75e6ef0fe5d39f481626"
 
-      # rubocop:disable Style/OptionalBooleanParameter
+      # rubocop:disable-next Style/OptionalBooleanParameter
       def initialize(client, preview_mode = false)
         @client = client
         @preview_mode = preview_mode
         @entities_repo = EntitiesRepo.new
         @items_repo = ItemsRepo.new(@entities_repo)
       end
-      # rubocop:enable Style/OptionalBooleanParameter
 
       def load
         threads = [

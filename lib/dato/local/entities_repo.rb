@@ -17,7 +17,7 @@ module Dato
       end
 
       def find_entity(type, id)
-        entities.fetch(type, {}).fetch(id, nil)
+        entities.dig(type, id)
       end
 
       def destroy_entities(type, ids)

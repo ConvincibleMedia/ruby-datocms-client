@@ -31,7 +31,7 @@ module Dato
 
       def http_source?
         uri = Addressable::URI.parse(source)
-        uri.scheme == "http" || uri.scheme == "https"
+        %w[http https].include?(uri.scheme)
       rescue Addressable::URI::InvalidURIError
         false
       end

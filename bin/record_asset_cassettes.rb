@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require "English"
 require "io/console"
 require "fileutils"
 require "tmpdir"
@@ -37,9 +38,7 @@ def dotenv_credentials(path)
 
     value = match[2].strip
     quote = value[0]
-    if ["\"", "'"].include?(quote) && value[-1] == quote
-      value = value[1...-1]
-    end
+    value = value[1...-1] if ["\"", "'"].include?(quote) && value[-1] == quote
 
     credentials[name] = value
   end
@@ -111,7 +110,7 @@ begin
         "--fail-fast",
         *SPECS,
       )
-      status = $?.exitstatus
+      status = $CHILD_STATUS.exitstatus
 
       if success
         missing = CASSETTES.reject { |cassette| File.exist?(cassette) }

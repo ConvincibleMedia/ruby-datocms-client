@@ -39,7 +39,7 @@ module Dato
 
     def respond_to_missing?(method, include_private = false)
       json_schema.definitions.each do |type, obj|
-        is_collection = obj.links.select { |x| x.rel == "instances" }.any?
+        is_collection = obj.links.any? { |x| x.rel == "instances" }
         namespace = is_collection ? type.pluralize : type
         return true if method.to_s == namespace
       end
@@ -49,7 +49,7 @@ module Dato
 
     def method_missing(method, *args, &block)
       json_schema.definitions.each do |type, obj|
-        is_collection = obj.links.select { |x| x.rel == "instances" }.any?
+        is_collection = obj.links.any? { |x| x.rel == "instances" }
         namespace = is_collection ? type.pluralize : type
 
         next unless method.to_s == namespace

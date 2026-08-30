@@ -24,7 +24,7 @@ module Dato
 
       # Get token
       if !token || token.empty?
-        token = ENV[options[:token_var]]
+        token = ENV.fetch(options[:token_var], nil)
         unless token
           puts "Missing token"
           exit 1
