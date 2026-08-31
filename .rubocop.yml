@@ -5,6 +5,7 @@ AllCops:
 
   Exclude:
   - "dato.gemspec"
+  - "vendor/bundle/**/*"
 
 Style/SafeNavigation:
   Enabled: false

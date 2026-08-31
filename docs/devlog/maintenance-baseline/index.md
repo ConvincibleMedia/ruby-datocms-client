@@ -5,7 +5,7 @@ Establish a reproducible, continuously verified Ruby 2.7.5 baseline from which m
 
 ## Stages
 
-* Reproducible baseline — complete.
+* Reproducible baseline — complete locally; hosted CI confirmation pending.
 * Repository distribution — complete.
 * Dependency and API verification — complete.
 
@@ -24,3 +24,4 @@ Establish a reproducible, continuously verified Ruby 2.7.5 baseline from which m
 * ActiveSupport's patched supported branches require newer Ruby. The client now loads only the Hash, Object and String extensions it uses, excluding the helpers affected by three low-severity advisories; the exact advisories are documented exceptions until the Ruby 3.3 upgrade.
 * Both legacy hyperschema endpoints still respond, and the controlled live recorder completed four examples against DatoCMS with disposable-project teardown and cassette secret checks.
 * The final offline suite passed 155 examples with 93.64% line coverage. Dependency audit, RuboCop, package build and isolated package smoke testing also passed.
+* The first hosted CI run exposed a layout difference: Bundler cached dependencies under `vendor/bundle`, which RuboCop then scanned. The project configuration now excludes that dependency cache; a new hosted run is required to confirm the workflow end to end.
