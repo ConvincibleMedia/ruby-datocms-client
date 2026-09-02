@@ -11,7 +11,7 @@
 
 ## Completion criteria
 
-Complete locally. Hosted CI confirmation is pending after correcting the first-run failure.
+Complete locally and in hosted CI.
 
 * Ruby 2.7.5 with Bundler 2.4.14 satisfies the retained lockfile.
 * RuboCop inspected 127 files without offences.
@@ -26,4 +26,4 @@ Complete locally. Hosted CI confirmation is pending after correcting the first-r
 * Fresh Ruby 2.7 installs required explicit compatibility ceilings for Active Support, Dotenv, FFI, Public Suffix, SecureRandom, Minitest, Connection Pool and I18n.
 * `bin/smoke_package` preserves the consumer-resolution check locally and in CI.
 * The initial hosted run failed during RuboCop because `ruby/setup-ruby` cached dependencies inside `vendor/bundle`, exposing obsolete RuboCop configuration shipped by `rest-client`.
-* `.rubocop.yml` now excludes `vendor/bundle/**/*`. Local RuboCop verification remains green at 127 project files and no offences; the next commit must receive a successful hosted run before this stage is finally closed.
+* `.rubocop.yml` now excludes `vendor/bundle/**/*`. Local RuboCop verification remains green at 127 project files and no offences, and the corrected hosted workflow passed.
