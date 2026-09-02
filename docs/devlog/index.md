@@ -4,4 +4,4 @@
 ## Sub-projects
 
 * Maintenance baseline — complete.
-* Development continuation — planned; no implementation started.
+* Development continuation — in progress; dual-runtime continuous integration passes locally and awaits hosted verification.

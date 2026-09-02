@@ -5,7 +5,7 @@ Continue development from the restored maintenance baseline while retaining Ruby
 
 ## Status
 
-Planned. This document is a hand-off only; no implementation work described below has started.
+In progress. The stage 1 workflow implementation and dual-runtime local verification are complete; hosted CI verification remains.
 
 
 ## Constraints and decisions
@@ -112,4 +112,4 @@ The following is intentionally outside this continuation plan:
 
 ## Handoff starting point
 
-The next developer should begin with stage 1 and confirm the current Ruby 2.7.5 job remains green before introducing the Ruby 3.3 matrix entry. No code changes for this plan have been attempted in this hand-off.
+Stage 1 now defines Ruby 2.7.5 and Ruby 3.3 matrix jobs with the full existing verification sequence on both runtimes. Local verification passes under Ruby 2.7.5 and Ruby 3.3.6. Commit and push the workflow to confirm both hosted jobs pass, then continue to stage 2.
