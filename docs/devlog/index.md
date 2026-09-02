@@ -4,4 +4,4 @@
 ## Sub-projects
 
 * Maintenance baseline — complete.
-* Development continuation — in progress; Git-source consumer smoke test passes locally and awaits hosted verification.
+* Development continuation — in progress; current DatoCMS coverage audit complete and SEO dump fidelity selected for the first general change.

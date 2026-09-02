@@ -11,6 +11,8 @@
 
 ## Completion criteria
 
+Complete locally and in hosted CI.
+
 * The consumer lockfile records the repository and exact tested revision.
 * The Git-sourced library and CLI pass under Ruby 2.7.5 and Ruby 3.3.
 * Temporary consumer files and installed dependencies remain outside the repository and cannot affect packaging or RuboCop.
@@ -35,11 +37,11 @@
 * Installed CLI help passed on both runtimes.
 
 
-## Remaining work
+## Hosted evidence
 
-* Confirm both hosted CI matrix jobs pass the new smoke test.
+Both Ruby matrix jobs passed the Git-source consumer check in GitHub Actions while retaining the separate built-package smoke test.
 
 
-## Next action
+## Status
 
-Commit and push the stage 2 changes, then confirm both hosted CI matrix jobs pass the new Git-source smoke test.
+Complete.

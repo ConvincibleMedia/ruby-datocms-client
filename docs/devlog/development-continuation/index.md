@@ -5,7 +5,7 @@ Continue development from the restored maintenance baseline while retaining Ruby
 
 ## Status
 
-In progress. Stage 1 is complete; the stage 2 Git-source consumer smoke test passes locally and awaits hosted CI verification.
+In progress. Stages 1, 2 and 3 are complete. Stage 4 will preserve current SEO values in local dumps.
 
 
 ## Constraints and decisions
@@ -13,6 +13,8 @@ In progress. Stage 1 is complete; the stage 2 Git-source consumer smoke test pas
 * Ruby 2.7.5 remains the compatibility floor and the required legacy CI gate.
 * Ruby 3.3 coverage will verify forward compatibility; it will not change `required_ruby_version` or remove Ruby 2.7.5 support.
 * The complete verification sequence passes locally and in hosted CI on both Ruby 2.7.5 and Ruby 3.3.
+* Git-source consumer verification uses the checkout's exact revision through a local `file://` source, avoiding unreliable remote access to synthetic pull-request merge commits.
+* Git-source consumer Bundler state and installed dependencies remain under a disposable `/tmp` project and cannot enter the package or RuboCop inputs.
 * Distribution remains by direct Git repository reference.
 * Do not create a Git release tag as part of this plan.
 * Do not publish the existing `dato` gem. Any future RubyGems package under another name is separate work.
@@ -113,4 +115,4 @@ The following is intentionally outside this continuation plan:
 
 ## Handoff starting point
 
-Stage 1 is complete. The stage 2 Git-source consumer script and CI step are implemented and pass locally under Ruby 2.7.5 and Ruby 3.3.6. Commit and push the changes, then confirm both hosted matrix jobs pass.
+Stages 1, 2 and 3 are complete. Stage 4 should implement F1 from the coverage audit: preserve `twitter_card` and `no_index` in the local SEO value and its serialised hash, beginning with a focused regression spec. Keep the other audit findings as separate follow-up work.
