@@ -42,3 +42,6 @@ jobs:
 
       - name: Smoke-test installed gem
         run: bash bin/smoke_package pkg/dato-*.gem
+
+      - name: Smoke-test Git-source consumer
+        run: bash bin/smoke_git_source

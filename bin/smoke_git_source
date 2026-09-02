@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Resolve the exact checked-out revision so the consumer never tests an implicit branch tip.
+repository_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+repository_revision="$(git -C "$repository_root" rev-parse HEAD)"
+repository_uri="file://${repository_root}"
+
+# Keep the consumer project, Bundler configuration and installed gems outside the repository.
+consumer_root="$(mktemp -d /tmp/dato-git-smoke.XXXXXX)"
+cleanup() {
+	rm -rf -- "$consumer_root"
+}
+trap cleanup EXIT
+
+cat > "$consumer_root/Gemfile" <<GEMFILE
+source "https://rubygems.org"
+
+gem "dato", git: "$repository_uri", ref: "$repository_revision"
+GEMFILE
+
+export BUNDLE_GEMFILE="$consumer_root/Gemfile"
+export BUNDLE_APP_CONFIG="$consumer_root/.bundle"
+export BUNDLE_PATH="$consumer_root/vendor/bundle"
+
+# Run Bundler from the consumer itself so it cannot inherit the repository's project context.
+cd "$consumer_root"
+
+fail_step() {
+	echo "Git-source smoke test failed during $1." >&2
+	exit 1
+}
+
+# Resolve from Git and create the consumer lockfile before testing the installed interface.
+echo "Resolving Git-source consumer dependencies at $repository_revision"
+bundle install || fail_step "dependency resolution"
+
+grep -Fq "remote: $repository_uri" "$consumer_root/Gemfile.lock" || fail_step "repository lock verification"
+grep -Fq "revision: $repository_revision" "$consumer_root/Gemfile.lock" || fail_step "revision lock verification"
+
+echo "Loading Git-sourced dato library"
+bundle exec ruby -e 'require "dato"; puts Dato::VERSION' || fail_step "library loading"
+
+echo "Starting Git-sourced dato CLI"
+bundle exec dato help || fail_step "CLI startup"

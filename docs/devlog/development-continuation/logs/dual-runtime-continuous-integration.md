@@ -10,6 +10,8 @@
 
 ## Completion criteria
 
+Complete locally and in hosted CI.
+
 * The workflow defines independent Ruby 2.7.5 and Ruby 3.3 verification jobs.
 * Both jobs exercise the complete existing verification sequence.
 * Hosted CI passes on both runtimes without changing the gem's minimum Ruby requirement.
@@ -34,11 +36,11 @@
 * Fresh isolated package installation, `require "dato"`, version reporting and installed CLI help passed on both runtimes.
 
 
-## Remaining work
+## Hosted evidence
 
-* Commit and push the workflow change, then confirm both hosted matrix jobs pass.
+Both Ruby matrix jobs passed in GitHub Actions with the shared dependency audit, RuboCop, offline suite, package build and installed-package smoke test sequence.
 
 
-## Next action
+## Status
 
-Commit and push the workflow change, then verify both matrix jobs in GitHub Actions. Fix any hosted-only failure without changing the Ruby 2.7.5 compatibility floor.
+Complete.

@@ -5,13 +5,14 @@ Continue development from the restored maintenance baseline while retaining Ruby
 
 ## Status
 
-In progress. The stage 1 workflow implementation and dual-runtime local verification are complete; hosted CI verification remains.
+In progress. Stage 1 is complete; the stage 2 Git-source consumer smoke test passes locally and awaits hosted CI verification.
 
 
 ## Constraints and decisions
 
 * Ruby 2.7.5 remains the compatibility floor and the required legacy CI gate.
 * Ruby 3.3 coverage will verify forward compatibility; it will not change `required_ruby_version` or remove Ruby 2.7.5 support.
+* The complete verification sequence passes locally and in hosted CI on both Ruby 2.7.5 and Ruby 3.3.
 * Distribution remains by direct Git repository reference.
 * Do not create a Git release tag as part of this plan.
 * Do not publish the existing `dato` gem. Any future RubyGems package under another name is separate work.
@@ -112,4 +113,4 @@ The following is intentionally outside this continuation plan:
 
 ## Handoff starting point
 
-Stage 1 now defines Ruby 2.7.5 and Ruby 3.3 matrix jobs with the full existing verification sequence on both runtimes. Local verification passes under Ruby 2.7.5 and Ruby 3.3.6. Commit and push the workflow to confirm both hosted jobs pass, then continue to stage 2.
+Stage 1 is complete. The stage 2 Git-source consumer script and CI step are implemented and pass locally under Ruby 2.7.5 and Ruby 3.3.6. Commit and push the changes, then confirm both hosted matrix jobs pass.
