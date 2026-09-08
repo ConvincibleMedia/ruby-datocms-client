@@ -24,7 +24,7 @@ build.zip
 .codex
 .agents
 agents.md
-docs/environments/local.md
+docs/environment/local.md
 
 # Temp/cache/logs
 */tmp
